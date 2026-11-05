@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trương Gia Hào | Social &amp; Content Marketing</title>
+<meta name="description" content="Trương Gia Hào, Bachelor of Marketing at UEH. Social media marketer, content creator, campaign executive, partnership manager, storyteller.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4ECDD;--bg2:#EBDFC8;--soft:#EFE4CF;--ink:#1D1A17;--mid:#6B6256;--line:rgba(29,26,23,.18);--oxb:#5E1B22;--navy:#1B2A41;--gold:#B08D57;--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font:400 16px/1.5 "Inter Tight",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}a{color:inherit;text-decoration:none}.mono{font:500 11px/1 "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase}
+#track{height:700vh;position:relative}.stage{position:sticky;top:0;height:100svh;overflow:hidden}#gl{position:absolute;inset:0;width:100%;height:100%;display:block}
+#bar{position:absolute;left:0;right:0;top:0;height:68px;padding:0 28px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;z-index:5}
+#bar>div:last-child{justify-self:end;display:flex;gap:10px}.logo{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:.02em}.logo i{display:grid;place-items:center;width:28px;height:28px;background:var(--ink);color:#fff;font-style:normal}
+.pill{height:34px;padding:0 15px;border:1px solid var(--ink);border-radius:99px;display:inline-flex;align-items:center;gap:8px}.pill.fill{background:var(--ink);color:#fff}
+#nav{display:flex;gap:8px}#nav button{height:34px;min-width:44px;padding:0 14px;border:1px solid var(--ink);border-radius:99px}
+.big{position:absolute;left:0;right:0;text-align:center;font:700 clamp(64px,15.5vw,250px)/.86 "Inter Tight",sans-serif;letter-spacing:-.045em;white-space:nowrap;pointer-events:none;z-index:2;will-change:transform}
+#t1{top:15svh}#t2{top:calc(15svh + clamp(64px,15.5vw,250px)*.86)}
+#cap{position:absolute;left:28px;bottom:34px;max-width:360px;font-size:15px;color:var(--mid);z-index:3}
+#cross{position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-23px;opacity:0;z-index:1;pointer-events:none}#cross:before,#cross:after{content:"";position:absolute;background:var(--ink)}#cross:before{left:22px;top:0;width:1px;height:46px}#cross:after{top:22px;left:0;height:1px;width:46px}
+#rule{position:absolute;left:28px;right:28px;top:84px;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;z-index:1}
+#lab{position:absolute;z-index:6;pointer-events:none;padding:6px 10px;background:var(--ink);color:#fff;transform:translate(-50%,-140%);opacity:0;white-space:nowrap}
+#exp{padding:110px 28px 120px;background:var(--bg);border-top:1px solid var(--ink)}.wrap{max-width:1240px;margin:0 auto}
+#exp h2{font:700 clamp(40px,6vw,92px)/.95 "Inter Tight";letter-spacing:-.04em;margin:14px 0 46px}
+.ms{display:grid;grid-template-columns:minmax(280px,420px) 1fr;gap:5vw;align-items:start}
+#list{position:relative;border-top:1px solid var(--ink)}#ri{position:absolute;left:0;right:0;top:0;height:0;background:var(--ink);transition:transform .6s var(--ease),height .6s var(--ease)}
+#list button{position:relative;z-index:1;display:block;width:100%;text-align:left;padding:14px 12px;border-bottom:1px solid var(--line);transition:color .45s var(--ease)}#list button.on{color:#fff}#list b{display:block;font-weight:600;font-size:17px;line-height:1.2}#list span{font-size:13px;opacity:.7}
+#det{position:sticky;top:90px;min-height:420px}.ln{overflow:hidden}.ln>*{display:block}#det h3{font:700 clamp(30px,3.6vw,52px)/1 "Inter Tight";letter-spacing:-.03em;margin:8px 0}
+.sow{display:grid;grid-template-columns:70px 1fr;gap:14px;padding:16px 0;border-top:1px solid var(--line)}.sow p{font-size:17px;line-height:1.45;max-width:60ch}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.chips span{padding:7px 12px;border:1px solid var(--ink);border-radius:99px}
+.sum{color:var(--mid);font-size:18px;max-width:56ch;margin-bottom:22px}
+@media(max-width:760px){.ms{grid-template-columns:1fr}#det{position:static;min-height:0}#bar{padding:0 14px}#bar .pill.hd{display:none}#nav button{min-width:38px;padding:0 10px}.logo span{display:none}#cap{left:14px;right:14px;font-size:13px;bottom:22px}}
+.big{font:500 clamp(56px,12vw,200px)/.9 "Cormorant Garamond",Georgia,serif;letter-spacing:-.01em}#t1{top:14svh}#t2{top:calc(14svh + clamp(56px,12vw,200px)*.9);color:var(--oxb);font-style:italic}
+.logo i,.pill.fill,#list button.on{color:var(--bg)}#lab{color:var(--bg);background:var(--oxb)}.logo i{background:var(--oxb)}.pill.fill{background:var(--oxb);border-color:var(--oxb)}.pill,#nav button{border-color:var(--gold)}#rule{background:var(--gold)}#cross:before,#cross:after{background:var(--gold)}
+#cap{font:500 21px/1.35 "Cormorant Garamond",Georgia,serif;color:var(--ink);max-width:420px}#exp{background:var(--bg2);border-top:1px solid var(--gold)}#ri{background:var(--oxb)}#exp h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;letter-spacing:-.02em}#exp h2 i{color:var(--oxb)}
+#det h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600}.chips span{border-color:var(--gold)}#shelf{display:block;width:100%;height:58vh;min-height:340px;margin:0 0 48px;touch-action:pan-y}
+</style></head><body>
+<div id="track"><div class="stage">
+<canvas id="gl"></canvas>
+<header id="bar"><div class="logo"><i>G</i><span>TRƯƠNG GIA HÀO</span></div><div id="nav"><button id="pv" class="mono" aria-label="Back">←</button><button id="nx" class="mono" aria-label="Next">→</button></div><div><a class="pill mono hd" href="mailto:truonggiahao2004.contact@gmail.com">Liên hệ •</a><a class="pill mono fill" href="#exp">Danh mục ∶</a></div></header>
+<div class="big" id="t1">TRƯƠNG</div><div class="big" id="t2">GIA HÀO</div>
+<p id="cap">Mình là Gia Hào, sinh viên Marketing tại UEH (GPA 3.8 / 4.0). Mình lên kế hoạch, viết và quay nội dung social cho thương hiệu, và mở cửa cho mọi ngành.</p>
+<div id="cross"></div><div id="rule"></div><div id="lab" class="mono"></div>
+</div></div>
+<section id="exp"><div class="wrap"><span class="mono">Kinh nghiệm / Scope of work</span><h2>9 vị trí,<br><i>từng đầu việc.</i></h2><p class="sum" style="margin:-24px 0 26px">Rê chuột để nâng từng cuốn sách lên, bấm để đọc chi tiết bên dưới.</p><canvas id="shelf" aria-label="Chín vị trí làm việc dưới dạng chín cuốn sách"></canvas>
+<div class="ms"><div id="list"><div id="ri"></div></div><div id="det" aria-live="polite"></div></div></div></section>
+<script type="module">
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js';
+const $=s=>document.querySelector(s),clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),ss=x=>x*x*(3-2*x),RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+/* 8 ribbon cards: all content verified. r = index in R (experience list) opened when the card is clicked */
+const CARDS=[
+{t:'Trương Gia Hào',k:'Gia Hào',l:'Bachelor of Marketing, UEH · GPA 3.8 / 4.0',s:'Open to every industry',th:'navy',img:'images/avatar.jpg',av:1,r:0},
+{t:'Storyteller',k:'14,301',l:'views on my top reel',s:'DarlingnPlanners · 69 posts',th:'oxb',img:'images/stories/dnp-ig-25-1.jpg',r:1},
+{t:'Content Creator',k:'9',l:'shoot projects in one year',s:'The Cocoa Project · scripting, shooting, CapCut',th:'ivory',img:'images/stories/cocoa-01.jpg',r:3},
+{t:'Campaign Executive',k:'5,000,000+',l:'youths reached, target 3,000,000',s:'F75 · Unilever Vietnam & YouthSpeak Vietnam',th:'navy',r:6},
+{t:'Partnership Manager',k:'45M VND',l:'B2B partnerships · 80M+ VND budget',s:'AIESEC in Vietnam · S Communications',th:'ivory',r:6},
+{t:'Social media marketer',k:'4 channels',l:'Facebook · Instagram · TikTok · Threads',s:'Wedding recaps, reels and brand stories',th:'sage',img:'images/stories/dnp-03-1.jpg',r:1},
+{t:'Events & PR',k:'5,000',l:'attendees at flagship events · 300K+ reach',s:'Ban Phong trào UEH · Nối Vòng Tay Lớn 2023',th:'oxb',r:7},
+{t:'Ghibli in Town',k:'Press launch',l:'School project · Facebook content series',s:'2025',th:'navy',img:'images/stories/ghibli-01.jpg',r:8}];
+/* experience, newest first. Only facts from the verified data. */
+const R=[
+{o:'La Viet Coffee',n:'Content Creator (part-time)',d:'Jan 2026 – Jul 2026',m:'End-to-end short-form video for a premium Vietnamese coffee brand.',w:['Viết kịch bản (scripting) cho video ngắn.','Quay (shooting) nội dung.','Dựng hậu kỳ trên CapCut.'],c:['CapCut','Short-form video']},
+{o:'DarlingnPlanners',n:'Social Media Collaborator',d:'May 2025 – May 2026',m:'69 bài đăng cho đội ngũ wedding planner: 36 trên Facebook và 33 trên Instagram, 299 ảnh.',w:['Viết caption cho 69 bài đăng (Facebook thiên về tiếng Việt, Instagram thiên về tiếng Anh).','Chọn và sắp xếp ảnh cho các bài nhiều ảnh (carousel).','Đăng Reels: “Thảo My & Quốc Việt” đạt 14,301 views và 108 likes; “Mina & Mike” đạt 1,227 views.'],c:['Facebook','Instagram','Reels']},
+{o:'S Communications',n:'Partnership & Sponsorship Operations Manager',d:'Dec 2024 – May 2026',m:'11+ đối tác doanh nghiệp và ngân sách 80M+ VND.',w:['Vận hành quan hệ đối tác và tài trợ với 11+ doanh nghiệp, ngân sách 80M+ VND.','Chiến dịch BUPNON TEA365 (2024): 20,000+ lượt tương tác từ user-generated content và online minigames.'],c:['11+ partners','80M+ VND','20,000+ engagements']},
+{o:'The Cocoa Project',n:'Branding & Communications Intern & Freelancer',d:'Nov 2024 – May 2026',m:'Nội dung cho Cocoa trên Facebook, Instagram và Threads.',w:['Quản lý nội dung trên Facebook, Instagram và Threads.','Thực hiện 9 dự án shooting (Dec 2024 – Dec 2025).','Dựng video, chỉnh ảnh và thiết kế đồ họa.'],c:['9 shoot projects','Facebook','Instagram','Threads']},
+{o:'Metanoia III',n:'Event & Communication Coordinator',d:'Aug 2025 – Oct 2025',m:'Truyền thông và trải nghiệm tại sự kiện.',w:['Điều phối truyền thông và trải nghiệm sự kiện cho 100+ người tham dự.'],c:['100+ attendees']},
+{o:'Will & Tina Media',n:'Operations & Project Assistant',d:'Apr 2025 – Oct 2025',m:'Hỗ trợ vận hành cho kênh hài hơn 200K người theo dõi.',w:['Điều phối lịch quay.','Hỗ trợ vận hành hằng ngày của kênh.'],c:['200K+ followers']},
+{o:'AIESEC in Vietnam',n:'Partnership Manager & Campaign Executive',d:'Mar 2023 – Jun 2024',m:'Tài trợ B2B, đối tác truyền thông và chiến dịch F75.',w:['45M VND tài trợ B2B; 8 trường đại học và 20+ đối tác truyền thông; 112% GVA cá nhân.','F75 “Búng tay, Tách nhựa” (cùng Unilever Vietnam và YouthSpeak Vietnam, Oct 2024): 5,000,000+ reach so với mục tiêu 3,000,000; 50,000+ tương tác; 403 đội đăng ký; 182 kg nhựa thu gom.','Marvellous Member chi nhánh TP.HCM, Q3 và Q4 2023.'],c:['45M VND','112% GVA','5,000,000+ reach']},
+{o:'Ban Phong trào (UEH Volunteers)',n:'Communications & PR Collaborator',d:'Nov 2022 – Aug 2024',m:'Truyền thông và PR cho các sự kiện lớn của UEH.',w:['Nối Vòng Tay Lớn 2023 (4 ngày): 1,000+ người tham gia, 300K+ reach, 1,300+ reactions, 500+ comments, 600+ shares.','Prime Wave 2023: 30K+ reach, 700+ reactions, 200+ comments, 100+ shares.','Truyền thông và PR cho sự kiện lên đến 5,000 người tham dự.'],c:['5,000 attendees','300K+ reach']},
+{o:'Ghibli in Town',n:'School Project · Press Launch & Content Lead',d:'2025',m:'Dự án học tập tại UEH.',w:['Lập kế hoạch họp báo ra mắt (press launch).','Sản xuất chuỗi nội dung Facebook.'],c:['Press launch','Facebook']}];
+var sel=0;
+/* ---------- experience master-detail (mask-slide reveal, sliding black indicator) ---------- */
+const list=$('#list'),det=$('#det'),ri=$('#ri'),btns=R.map((r,i)=>{const b=document.createElement('button');b.innerHTML=`<b>${r.o}</b><span>${r.n} · ${r.d}</span>`;b.onclick=()=>pick(i);list.append(b);return b});
+function pick(i,first){sel=i;btns.forEach((b,j)=>b.classList.toggle('on',j===i));const b=btns[i];ri.style.height=b.offsetHeight+'px';ri.style.transform=`translateY(${b.offsetTop}px)`;const r=R[i];
+ det.innerHTML=`<div class=ln><span class=mono style="color:var(--mid)">${String(i+1).padStart(2,'0')} / 09 · ${r.d}</span></div><div class=ln><h3>${r.o}</h3></div><div class=ln><span class=mono>${r.n}</span></div><div class=ln style="margin-top:18px"><p class=sum>${r.m}</p></div>`+r.w.map((w,k)=>`<div class=ln><div class=sow><span class=mono>SOW ${String(k+1).padStart(2,'0')}</span><p>${w}</p></div></div>`).join('')+`<div class=chips>${r.c.map(c=>`<span class=mono>${c}</span>`).join('')}</div>`;
+ if(!RM)[...det.querySelectorAll('.ln>*')].forEach((e,k)=>e.animate([{transform:'translateY(110%)'},{transform:'none'}],{duration:800,delay:k*70,easing:'cubic-bezier(.2,.8,.2,1)',fill:'both'}))}
+pick(0);addEventListener('resize',()=>pick(btns.findIndex(b=>b.classList.contains('on'))));
+/* ---------- 3D ribbon hero ---------- */
+const cvs=$('#gl'),ren=new THREE.WebGLRenderer({canvas:cvs,antialias:true});ren.setPixelRatio(Math.min(devicePixelRatio,2));ren.setClearColor(0xF4ECDD,1);
+const sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(35,1,.1,60);cam.position.set(0,0,8);
+const curve=new THREE.CatmullRomCurve3([[-7,-3.4,-2],[-3.6,-1.8,0],[-.8,-.2,2.2],[1.2,.9,3.6],[3.6,2.2,.5],[7,3.6,-3]].map(a=>new THREE.Vector3(...a)));
+const VS='varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}';
+const FS='uniform sampler2D map;uniform float asp;varying vec2 vUv;void main(){vec2 uv=vUv;if(!gl_FrontFacing)uv.x=1.-uv.x;float r=.018;vec2 h=vec2(asp,1.)*.5,p=(vUv-.5)*vec2(asp,1.);float d=length(max(abs(p)-(h-r),0.))-r;float a=1.-smoothstep(0.,.004,d);if(a<.01)discard;vec4 c=texture2D(map,uv);gl_FragColor=vec4(c.rgb,a);}';
+const CW=800,CH=1067,geo=new THREE.PlaneGeometry(.9,1.2),cards=[];
+function wrap(g,t,x,y,mw,lh,max){const w=t.split(' ');let l='',n=0;for(const x2 of w){const tt=l+x2+' ';if(g.measureText(tt).width>mw&&l){g.fillText(l.trim(),x,y+n*lh);l=x2+' ';if(++n>=max-1)break}else l=tt}g.fillText(l.trim(),x,y+n*lh);return n+1}
+const TH={navy:['#1B2A41','#F4ECDD','#C9A96A'],oxb:['#5E1B22','#F4ECDD','#D8B77A'],ivory:['#F1E7D3','#1D1A17','#8E6B35'],sage:['#566A58','#F4ECDD','#E0CF98']},SER='"Cormorant Garamond",Georgia,serif',SAN='"Inter Tight",sans-serif';
+function draw(c,img){const g=c.g,d=c.d,[bg,fg,ac]=TH[d.th];g.fillStyle=bg;g.fillRect(0,0,CW,CH);g.strokeStyle=ac;g.lineWidth=3;g.strokeRect(26,26,CW-52,CH-52);g.lineWidth=1.2;g.strokeRect(38,38,CW-76,CH-76);g.textBaseline='alphabetic';g.textAlign='left';let y=170;
+ if(d.img){const x0=90,x1=CW-90,r=(x1-x0)/2,top=80,bot=560;g.save();g.beginPath();g.moveTo(x0,bot);g.lineTo(x0,top+r);g.arc(CW/2,top+r,r,Math.PI,0);g.lineTo(x1,bot);g.closePath();g.clip();
+  if(img){const s=Math.max((x1-x0)/img.width,(bot-top)/img.height);g.drawImage(img,CW/2-img.width*s/2,(top+bot)/2-img.height*s/2,img.width*s,img.height*s)}else{g.fillStyle=ac;g.globalAlpha=.22;g.fillRect(x0,top,x1-x0,bot-top);g.globalAlpha=1;if(d.av){g.fillStyle=fg;g.font=`500 230px ${SER}`;g.textAlign='center';g.fillText('GH',CW/2,top+r+95);g.textAlign='left'}}
+  g.restore();y=630}
+ g.fillStyle=ac;g.font=`600 32px ${SAN}`;g.fillText(d.t.toUpperCase(),70,y);
+ let fs=d.img?130:200;g.fillStyle=fg;do{g.font=`600 ${fs}px ${SER}`;fs-=6}while(g.measureText(d.k).width>CW-140&&fs>40);const ky=y+(d.img?120:250);g.fillText(d.k,70,ky);
+ g.font=`500 34px ${SAN}`;g.fillStyle=fg;wrap(g,d.l,70,ky+60,CW-140,44,3);
+ g.fillStyle=ac;g.fillRect(70,CH-130,90,3);g.font=`500 26px ${SAN}`;g.fillStyle=fg;g.globalAlpha=.75;wrap(g,d.s,70,CH-84,CW-140,32,2);g.globalAlpha=1;c.tex.needsUpdate=true}
+CARDS.forEach((d,i)=>{const cv=document.createElement('canvas');cv.width=CW;cv.height=CH;const tex=new THREE.CanvasTexture(cv);tex.colorSpace=THREE.SRGBColorSpace;tex.anisotropy=4;
+ const m=new THREE.Mesh(geo,new THREE.ShaderMaterial({uniforms:{map:{value:tex},asp:{value:.75}},vertexShader:VS,fragmentShader:FS,side:THREE.DoubleSide}));
+ const c={i,d,cv,g:cv.getContext('2d'),tex,m,img:null};draw(c);sc.add(m);cards.push(c);
+ if(d.img){const im=new Image();im.onload=()=>{c.img=im;draw(c,im)};im.src=d.img}});
+Promise.all([document.fonts.load('600 100px "Cormorant Garamond"'),document.fonts.load('600 30px "Inter Tight"')]).then(()=>{cards.forEach(c=>draw(c,c.img));drawCovers()});
+/* scroll + layout */
+const track=$('#track'),t1=$('#t1'),t2=$('#t2'),cross=$('#cross'),rule=$('#rule'),cap=$('#cap'),lab=$('#lab'),nx=$('#nx'),pv=$('#pv');
+let p=0,tp=0,vw=1,vh=1,visW=9,visH=5,gs=1.5,hov=-1,mx=0,my=0;
+const span=()=>track.offsetHeight-innerHeight,goP=v=>scrollTo({top:clamp(v)*span(),behavior:'smooth'});
+function size(){vw=innerWidth;vh=innerHeight;ren.setSize(vw,vh,false);cam.aspect=vw/vh;cam.updateProjectionMatrix();visH=2*8*Math.tan(THREE.MathUtils.degToRad(17.5));visW=visH*cam.aspect;gs=Math.min(1.7,visW/3.3)}
+addEventListener('resize',size);size();
+addEventListener('scroll',()=>{tp=clamp(scrollY/span())},{passive:true});tp=clamp(scrollY/span());p=tp;
+pv.onclick=()=>goP(Math.round(tp*5)/5-.2);nx.onclick=()=>{if(tp>.97)$('#exp').scrollIntoView({behavior:'smooth'});else goP(Math.round(tp*5)/5+.2)};
+addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY;const r=new THREE.Raycaster(),v=new THREE.Vector2(mx/vw*2-1,-(my/vh)*2+1);r.setFromCamera(v,cam);const h=r.intersectObjects(cards.slice(0,6).map(c=>c.m));hov=h.length&&p>.9?cards.findIndex(c=>c.m===h[0].object):-1;cvs.style.cursor=hov>=0?'pointer':'default'});
+cvs.addEventListener('click',()=>{if(hov>=0){$('#exp').scrollIntoView({behavior:'smooth'});setTimeout(()=>pick(CARDS[hov].r),500)}});
+const X=new THREE.Vector3(1,0,0),Z=new THREE.Vector3(0,0,1),tmp=new THREE.Vector3(),sp=new THREE.Vector3(),M4=new THREE.Matrix4(),q1=new THREE.Quaternion(),q0=new THREE.Quaternion(),ONE=new THREE.Quaternion();
+function frame(){p+=(tp-p)*(RM?1:.09);const ph=Math.min(1,p/.72),q=ss(clamp((p-.72)/.2));
+ cards.forEach((c,i)=>{const u=.18-i*.11+ph*.78,uu=clamp(u,0,1),m=c.m;curve.getPointAt(uu,sp);curve.getTangentAt(uu,tmp);
+  const x=tmp.multiplyScalar(.2).addScaledVector(X,.8).normalize(),y=new THREE.Vector3().crossVectors(Z,x).normalize(),z=new THREE.Vector3().crossVectors(x,y);M4.makeBasis(x,y,z);q1.setFromRotationMatrix(M4);
+  let s=.95*Math.min(ss(clamp(u/.05)),ss(clamp((1-u)/.05)));
+  if(i<6){const col=i%3,row=Math.floor(i/3),slot=new THREE.Vector3((col-1)*.9*gs*1.14,(.5-row)*1.2*gs*1.1,0);sp.lerp(slot,q);q1.slerp(ONE,q);s+=(gs-s)*q}else s*=1-q;
+  m.position.copy(sp);m.quaternion.copy(q1);m.scale.setScalar(Math.max(s,.0001));m.visible=s>.002});
+ const a=ss(clamp(p/.34));t1.style.transform=`translateX(${-a*70}vw)`;t2.style.transform=`translateX(${a*70}vw)`;
+ cross.style.opacity=ss(clamp((p-.3)/.14))*(1-ss(clamp((p-.74)/.08)));rule.style.transform=`scaleX(${ss(clamp((p-.8)/.14))})`;cap.style.opacity=1-ss(clamp(p/.22));
+ nx.textContent=tp>.97?'KHÁM PHÁ HỒ SƠ ↓':'→';
+ if(hov>=0){lab.textContent=CARDS[hov].t;lab.style.left=mx+'px';lab.style.top=my+'px';lab.style.opacity=1}else lab.style.opacity=0;
+ ren.render(sc,cam);requestAnimationFrame(frame)}
+frame();
+/* ---------- bookshelf: 9 roles as 3D hardcovers; pointer wave with springs (idea from the Folio reference) ---------- */
+const sCv=$('#shelf'),r2=new THREE.WebGLRenderer({canvas:sCv,antialias:true,alpha:true});r2.setPixelRatio(Math.min(devicePixelRatio,2));r2.toneMapping=THREE.ACESFilmicToneMapping;r2.toneMappingExposure=1.05;
+const s2=new THREE.Scene(),c2=new THREE.PerspectiveCamera(19.5,2,.1,60);s2.add(new THREE.AmbientLight(0xffffff,.9),Object.assign(new THREE.DirectionalLight(0xfff3e4,2.4),{position:new THREE.Vector3(-4,6,6)}),Object.assign(new THREE.DirectionalLight(0xbfd2ff,.8),{position:new THREE.Vector3(6,3,-4)}));
+const BG=new THREE.BoxGeometry(1,1.5,.2),books=[],page=(v)=>{const k=document.createElement('canvas');k.width=k.height=128;const g=k.getContext('2d');g.fillStyle='#efe7d6';g.fillRect(0,0,128,128);g.strokeStyle='rgba(90,60,30,.16)';for(let i=0;i<128;i+=3){g.beginPath();if(v){g.moveTo(i,0);g.lineTo(i,128)}else{g.moveTo(0,i);g.lineTo(128,i)}g.stroke()}const t=new THREE.CanvasTexture(k);t.colorSpace=THREE.SRGBColorSpace;return new THREE.MeshStandardMaterial({map:t,roughness:.9})};
+const pH=page(0),pV=page(1),TK=['navy','oxb','ivory','sage'];
+function cover(i){const k=document.createElement('canvas');k.width=512;k.height=768;const g=k.getContext('2d'),r=R[i],[bg,fg,ac]=TH[TK[i%4]];g.fillStyle=bg;g.fillRect(0,0,512,768);g.strokeStyle=ac;g.lineWidth=3;g.strokeRect(22,22,468,724);g.lineWidth=1;g.strokeRect(32,32,448,704);g.textBaseline='alphabetic';
+ g.fillStyle=ac;g.font='600 24px "Inter Tight",sans-serif';g.fillText('N° '+String(i+1).padStart(2,'0'),60,86);let fs=82;g.fillStyle=fg;do{g.font=`600 ${fs}px ${SER}`;fs-=4}while(Math.max(...r.o.split(' ').map(w=>g.measureText(w).width))>390&&fs>30);
+ const lines=[];let l='';r.o.split(' ').forEach(w=>{if(g.measureText((l+' '+w).trim()).width>390&&l){lines.push(l);l=w}else l=(l+' '+w).trim()});lines.push(l);lines.slice(0,4).forEach((t,n)=>g.fillText(t,60,230+n*fs*.95));
+ g.fillStyle=ac;g.fillRect(60,560,70,3);g.fillStyle=fg;g.globalAlpha=.85;g.font='500 26px "Inter Tight",sans-serif';wrap(g,r.n,60,606,390,32,3);g.globalAlpha=1;g.fillStyle=ac;g.font='500 22px "IBM Plex Mono",monospace';g.fillText(r.d.toUpperCase(),60,716);
+ const t=new THREE.CanvasTexture(k);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=4;return [t,bg]}
+function drawCovers(){R.forEach((_,i)=>{const [t,bg]=cover(i),b=books[i];if(!b)return;b.cm.map=t;b.cm.needsUpdate=true})}
+R.forEach((_,i)=>{const [t,bg]=cover(i),col=new THREE.Color(bg).multiplyScalar(.62),cm=new THREE.MeshPhysicalMaterial({map:t,roughness:.42,clearcoat:.55,clearcoatRoughness:.35}),m=new THREE.Mesh(BG,[pH,new THREE.MeshPhysicalMaterial({color:col,roughness:.55,clearcoat:.3}),pV,pV,cm,new THREE.MeshStandardMaterial({color:col,roughness:.6})]),gr=new THREE.Group();gr.add(m);gr.position.set((i-4)*.98,-.3,(i-4)*-.1);gr.rotation.y=.2;s2.add(gr);books.push({m,gr,cm,y:-3,vy:0,z:0,vz:0})});
+let shVis=false,t0s=0,px=-1e4,py=-1e4,lastMove=-9,hovS=-1;const clk2=new THREE.Clock();
+new IntersectionObserver(e=>{shVis=e[0].isIntersecting;if(shVis&&!t0s)t0s=performance.now()/1000},{threshold:.15}).observe(sCv);
+function size2(){const w=sCv.clientWidth,hh=sCv.clientHeight;r2.setSize(w,hh,false);c2.aspect=w/hh;const d=Math.max(10.5,9.8/(2*Math.tan(THREE.MathUtils.degToRad(9.75))*c2.aspect));c2.position.set(.4,1.4,d);c2.lookAt(0,-.1,0);c2.updateProjectionMatrix()}
+addEventListener('resize',size2);size2();
+sCv.addEventListener('pointermove',e=>{const r=sCv.getBoundingClientRect();px=e.clientX-r.left;py=e.clientY-r.top;lastMove=performance.now()/1000;const rc=new THREE.Raycaster();rc.setFromCamera(new THREE.Vector2(px/r.width*2-1,-(py/r.height)*2+1),c2);const h=rc.intersectObjects(books.map(b=>b.m));hovS=h.length?books.findIndex(b=>b.m===h[0].object):-1;sCv.style.cursor=hovS>=0?'pointer':'default'});
+sCv.addEventListener('pointerleave',()=>{px=py=-1e4;lastMove=-9;hovS=-1});sCv.addEventListener('click',()=>{if(hovS>=0)pick(hovS)});
+const V=new THREE.Vector3();
+function shelf(){requestAnimationFrame(shelf);if(!shVis)return;const dt=Math.min(.05,clk2.getDelta()),now=performance.now()/1000,W=sCv.clientWidth,Hh=sCv.clientHeight,s=Math.max(W,Hh)*.085;let X0=px,Y0=py;
+ if(now-lastMove>4||matchMedia('(pointer:coarse)').matches){const u=(Math.sin(now*.45)+1)/2;V.copy(books[8].gr.position).lerp(books[0].gr.position,u).project(c2);X0=(V.x*.5+.5)*W;Y0=(-V.y*.5+.5)*Hh}
+ books.forEach((b,i)=>{V.set(0,.1,0);b.m.localToWorld(V);V.project(c2);const sx=(V.x*.5+.5)*W,sy=(-V.y*.5+.5)*Hh,inf=Math.exp(-(((sx-X0)**2)+(((sy-Y0)*.55)**2))/(s*s));
+  const up=Math.max(.78*inf,i===sel?.5:0),on=now-t0s>.25+(8-i)*.07||RM,ty=on?up*.9:-3,tz=up*.35;
+  for(let k=0;k<4;k++){const hh=dt/4;b.vy+=((ty-b.y)*70-b.vy*12.5)*hh;b.y+=b.vy*hh;b.vz+=((tz-b.z)*70-b.vz*12.5)*hh;b.z+=b.vz*hh}
+  b.m.position.set(0,b.y,b.z);b.m.rotation.x=-b.vy*.012});r2.render(s2,c2)}
+shelf();
+</script></body></html>
