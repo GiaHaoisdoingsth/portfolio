@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trương Gia Hào | Social &amp; Content Marketing</title>
+<meta name="description" content="Trương Gia Hào, Bachelor of Marketing at UEH. Social media marketer, content creator, campaign executive, partnership manager, storyteller.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--soft:#f7f7f5;--ink:#0a0a0b;--mid:#686763;--line:rgba(10,10,11,.12);--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font:400 16px/1.5 "Inter Tight",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}a{color:inherit;text-decoration:none}.mono{font:500 11px/1 "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase}
+#track{height:700vh;position:relative}.stage{position:sticky;top:0;height:100svh;overflow:hidden}#gl{position:absolute;inset:0;width:100%;height:100%;display:block}
+#bar{position:absolute;left:0;right:0;top:0;height:68px;padding:0 28px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;z-index:5}
+#bar>div:last-child{justify-self:end;display:flex;gap:10px}.logo{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:.02em}.logo i{display:grid;place-items:center;width:28px;height:28px;background:var(--ink);color:#fff;font-style:normal}
+.pill{height:34px;padding:0 15px;border:1px solid var(--ink);border-radius:99px;display:inline-flex;align-items:center;gap:8px}.pill.fill{background:var(--ink);color:#fff}
+#nav{display:flex;gap:8px}#nav button{height:34px;min-width:44px;padding:0 14px;border:1px solid var(--ink);border-radius:99px}
+.big{position:absolute;left:0;right:0;text-align:center;font:700 clamp(64px,15.5vw,250px)/.86 "Inter Tight",sans-serif;letter-spacing:-.045em;white-space:nowrap;pointer-events:none;z-index:2;will-change:transform}
+#t1{top:15svh}#t2{top:calc(15svh + clamp(64px,15.5vw,250px)*.86)}
+#cap{position:absolute;left:28px;bottom:34px;max-width:360px;font-size:15px;color:var(--mid);z-index:3}
+#cross{position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-23px;opacity:0;z-index:1;pointer-events:none}#cross:before,#cross:after{content:"";position:absolute;background:var(--ink)}#cross:before{left:22px;top:0;width:1px;height:46px}#cross:after{top:22px;left:0;height:1px;width:46px}
+#rule{position:absolute;left:28px;right:28px;top:84px;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;z-index:1}
+#lab{position:absolute;z-index:6;pointer-events:none;padding:6px 10px;background:var(--ink);color:#fff;transform:translate(-50%,-140%);opacity:0;white-space:nowrap}
+#exp{padding:110px 28px 120px;background:var(--bg);border-top:1px solid var(--ink)}.wrap{max-width:1240px;margin:0 auto}
+#exp h2{font:700 clamp(40px,6vw,92px)/.95 "Inter Tight";letter-spacing:-.04em;margin:14px 0 46px}
+.ms{display:grid;grid-template-columns:minmax(280px,420px) 1fr;gap:5vw;align-items:start}
+#list{position:relative;border-top:1px solid var(--ink)}#ri{position:absolute;left:0;right:0;top:0;height:0;background:var(--ink);transition:transform .6s var(--ease),height .6s var(--ease)}
+#list button{position:relative;z-index:1;display:block;width:100%;text-align:left;padding:14px 12px;border-bottom:1px solid var(--line);transition:color .45s var(--ease)}#list button.on{color:#fff}#list b{display:block;font-weight:600;font-size:17px;line-height:1.2}#list span{font-size:13px;opacity:.7}
+#det{position:sticky;top:90px;min-height:420px}.ln{overflow:hidden}.ln>*{display:block}#det h3{font:700 clamp(30px,3.6vw,52px)/1 "Inter Tight";letter-spacing:-.03em;margin:8px 0}
+.sow{display:grid;grid-template-columns:70px 1fr;gap:14px;padding:16px 0;border-top:1px solid var(--line)}.sow p{font-size:17px;line-height:1.45;max-width:60ch}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.chips span{padding:7px 12px;border:1px solid var(--ink);border-radius:99px}
+.sum{color:var(--mid);font-size:18px;max-width:56ch;margin-bottom:22px}
+@media(max-width:760px){.ms{grid-template-columns:1fr}#det{position:static;min-height:0}#bar{padding:0 14px}#bar .pill.hd{display:none}#nav button{min-width:38px;padding:0 10px}.logo span{display:none}#cap{left:14px;right:14px;font-size:13px;bottom:22px}}
+</style></head><body>
+<div id="track"><div class="stage">
+<canvas id="gl"></canvas>
+<header id="bar"><div class="logo"><i>G</i><span>TRƯƠNG GIA HÀO</span></div><div id="nav"><button id="pv" class="mono" aria-label="Back">←</button><button id="nx" class="mono" aria-label="Next">→</button></div><div><a class="pill mono hd" href="mailto:truonggiahao2004.contact@gmail.com">Liên hệ •</a><a class="pill mono fill" href="#exp">Danh mục ∶</a></div></header>
+<div class="big" id="t1">TRƯƠNG</div><div class="big" id="t2">GIA HÀO</div>
+<p id="cap">Bachelor of Marketing at UEH (GPA 3.8 / 4.0) — Social Media Marketer · Content Creator · Campaign Executive · Partnership Manager · Storyteller.</p>
+<div id="cross"></div><div id="rule"></div><div id="lab" class="mono"></div>
+</div></div>
+<section id="exp"><div class="wrap"><span class="mono">Kinh nghiệm / Scope of work</span><h2>9 vị trí,<br>từng đầu việc.</h2>
+<div class="ms"><div id="list"><div id="ri"></div></div><div id="det" aria-live="polite"></div></div></div></section>
+<script type="module">
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js';
+const $=s=>document.querySelector(s),clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),ss=x=>x*x*(3-2*x),RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+/* 8 ribbon cards: all content verified. r = index in R (experience list) opened when the card is clicked */
+const CARDS=[
+{t:'F75 Project “Búng tay, Tách nhựa”',k:'5,000,000+',l:'Digital reach',s:'Unilever & YouthSpeak Vietnam · Oct 2024',bg:'#0a0a0b',r:6},
+{t:'S Communications · BUPNON TEA365',k:'80M+ VND',l:'Budget · 11+ corporate partners · 20,000+ engagements',s:'Dec 2024 – May 2026',bg:'#f1f0ec',r:2},
+{t:'DarlingnPlanners',k:'14,301',l:'Views on the top reel · 69 posts (36 FB + 33 IG)',s:'Social Media Collaborator',bg:'#0a0a0b',img:'images/stories/dnp-ig-25-1.jpg',r:1},
+{t:'The Cocoa Project',k:'9',l:'Shoot projects · Facebook, Instagram, Threads',s:'Dec 2024 – Dec 2025',bg:'#f1f0ec',img:'images/stories/cocoa-01.jpg',r:3},
+{t:'AIESEC in Vietnam',k:'45M VND',l:'B2B partnerships · 8 universities · 20+ media partners · 112% GVA',s:'Mar 2023 – Jun 2024',bg:'#0a0a0b',r:6},
+{t:'Nối Vòng Tay Lớn · Ban Phong trào UEH',k:'5,000',l:'Event attendees · 300K+ social reach',s:'Nov 2022 – Aug 2024',bg:'#f1f0ec',r:7},
+{t:'La Viet Coffee · Will & Tina Media',k:'200K+',l:'Follower channel ops · end-to-end short-form video',s:'2025 – 2026',bg:'#0a0a0b',r:0},
+{t:'UEH · Bachelor of Marketing',k:'3.8 / 4.0',l:'Cumulative GPA · Ghibli in Town press launch (2025)',s:'University of Economics HCMC',bg:'#f1f0ec',img:'images/stories/ghibli-01.jpg',r:8}];
+/* experience, newest first. Only facts from the verified data. */
+const R=[
+{o:'La Viet Coffee',n:'Content Creator (part-time)',d:'Jan 2026 – Jul 2026',m:'End-to-end short-form video for a premium Vietnamese coffee brand.',w:['Viết kịch bản (scripting) cho video ngắn.','Quay (shooting) nội dung.','Dựng hậu kỳ trên CapCut.'],c:['CapCut','Short-form video']},
+{o:'DarlingnPlanners',n:'Social Media Collaborator',d:'May 2025 – May 2026',m:'69 bài đăng cho đội ngũ wedding planner: 36 trên Facebook và 33 trên Instagram, 299 ảnh.',w:['Viết caption cho 69 bài đăng (Facebook thiên về tiếng Việt, Instagram thiên về tiếng Anh).','Chọn và sắp xếp ảnh cho các bài nhiều ảnh (carousel).','Đăng Reels: “Thảo My & Quốc Việt” đạt 14,301 views và 108 likes; “Mina & Mike” đạt 1,227 views.'],c:['Facebook','Instagram','Reels']},
+{o:'S Communications',n:'Partnership & Sponsorship Operations Manager',d:'Dec 2024 – May 2026',m:'11+ đối tác doanh nghiệp và ngân sách 80M+ VND.',w:['Vận hành quan hệ đối tác và tài trợ với 11+ doanh nghiệp, ngân sách 80M+ VND.','Chiến dịch BUPNON TEA365 (2024): 20,000+ lượt tương tác từ user-generated content và online minigames.'],c:['11+ partners','80M+ VND','20,000+ engagements']},
+{o:'The Cocoa Project',n:'Branding & Communications Intern & Freelancer',d:'Nov 2024 – May 2026',m:'Nội dung cho Cocoa trên Facebook, Instagram và Threads.',w:['Quản lý nội dung trên Facebook, Instagram và Threads.','Thực hiện 9 dự án shooting (Dec 2024 – Dec 2025).','Dựng video, chỉnh ảnh và thiết kế đồ họa.'],c:['9 shoot projects','Facebook','Instagram','Threads']},
+{o:'Metanoia III',n:'Event & Communication Coordinator',d:'Aug 2025 – Oct 2025',m:'Truyền thông và trải nghiệm tại sự kiện.',w:['Điều phối truyền thông và trải nghiệm sự kiện cho 100+ người tham dự.'],c:['100+ attendees']},
+{o:'Will & Tina Media',n:'Operations & Project Assistant',d:'Apr 2025 – Oct 2025',m:'Hỗ trợ vận hành cho kênh hài hơn 200K người theo dõi.',w:['Điều phối lịch quay.','Hỗ trợ vận hành hằng ngày của kênh.'],c:['200K+ followers']},
+{o:'AIESEC in Vietnam',n:'Partnership Manager & Campaign Executive',d:'Mar 2023 – Jun 2024',m:'Tài trợ B2B, đối tác truyền thông và chiến dịch F75.',w:['45M VND tài trợ B2B; 8 trường đại học và 20+ đối tác truyền thông; 112% GVA cá nhân.','F75 “Búng tay, Tách nhựa” (cùng Unilever Vietnam và YouthSpeak Vietnam, Oct 2024): 5,000,000+ reach so với mục tiêu 3,000,000; 50,000+ tương tác; 403 đội đăng ký; 182 kg nhựa thu gom.','Marvellous Member chi nhánh TP.HCM, Q3 và Q4 2023.'],c:['45M VND','112% GVA','5,000,000+ reach']},
+{o:'Ban Phong trào (UEH Volunteers)',n:'Communications & PR Collaborator',d:'Nov 2022 – Aug 2024',m:'Truyền thông và PR cho các sự kiện lớn của UEH.',w:['Nối Vòng Tay Lớn 2023 (4 ngày): 1,000+ người tham gia, 300K+ reach, 1,300+ reactions, 500+ comments, 600+ shares.','Prime Wave 2023: 30K+ reach, 700+ reactions, 200+ comments, 100+ shares.','Truyền thông và PR cho sự kiện lên đến 5,000 người tham dự.'],c:['5,000 attendees','300K+ reach']},
+{o:'Ghibli in Town',n:'School Project · Press Launch & Content Lead',d:'2025',m:'Dự án học tập tại UEH.',w:['Lập kế hoạch họp báo ra mắt (press launch).','Sản xuất chuỗi nội dung Facebook.'],c:['Press launch','Facebook']}];
+/* ---------- experience master-detail (mask-slide reveal, sliding black indicator) ---------- */
+const list=$('#list'),det=$('#det'),ri=$('#ri'),btns=R.map((r,i)=>{const b=document.createElement('button');b.innerHTML=`<b>${r.o}</b><span>${r.n} · ${r.d}</span>`;b.onclick=()=>pick(i);list.append(b);return b});
+function pick(i,first){btns.forEach((b,j)=>b.classList.toggle('on',j===i));const b=btns[i];ri.style.height=b.offsetHeight+'px';ri.style.transform=`translateY(${b.offsetTop}px)`;const r=R[i];
+ det.innerHTML=`<div class=ln><span class=mono style="color:var(--mid)">${String(i+1).padStart(2,'0')} / 09 · ${r.d}</span></div><div class=ln><h3>${r.o}</h3></div><div class=ln><span class=mono>${r.n}</span></div><div class=ln style="margin-top:18px"><p class=sum>${r.m}</p></div>`+r.w.map((w,k)=>`<div class=ln><div class=sow><span class=mono>SOW ${String(k+1).padStart(2,'0')}</span><p>${w}</p></div></div>`).join('')+`<div class=chips>${r.c.map(c=>`<span class=mono>${c}</span>`).join('')}</div>`;
+ if(!RM)[...det.querySelectorAll('.ln>*')].forEach((e,k)=>e.animate([{transform:'translateY(110%)'},{transform:'none'}],{duration:800,delay:k*70,easing:'cubic-bezier(.2,.8,.2,1)',fill:'both'}))}
+pick(0);addEventListener('resize',()=>pick(btns.findIndex(b=>b.classList.contains('on'))));
+/* ---------- 3D ribbon hero ---------- */
+const cvs=$('#gl'),ren=new THREE.WebGLRenderer({canvas:cvs,antialias:true});ren.setPixelRatio(Math.min(devicePixelRatio,2));ren.setClearColor(0xffffff,1);
+const sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(35,1,.1,60);cam.position.set(0,0,8);
+const curve=new THREE.CatmullRomCurve3([[-7,-4,-2],[-3.4,-2.2,0],[-.6,-.3,3.2],[1.2,.9,6],[3.4,2.6,1.5],[7,4.4,-3]].map(a=>new THREE.Vector3(...a)));
+const VS='varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}';
+const FS='uniform sampler2D map;uniform float asp;varying vec2 vUv;void main(){vec2 uv=vUv;if(!gl_FrontFacing)uv.x=1.-uv.x;float r=.018;vec2 h=vec2(asp,1.)*.5,p=(vUv-.5)*vec2(asp,1.);float d=length(max(abs(p)-(h-r),0.))-r;float a=1.-smoothstep(0.,.004,d);if(a<.01)discard;vec4 c=texture2D(map,uv);gl_FragColor=vec4(c.rgb,a);}';
+const CW=800,CH=1067,geo=new THREE.PlaneGeometry(.9,1.2),cards=[];
+function wrap(g,t,x,y,mw,lh,max){const w=t.split(' ');let l='',n=0;for(const x2 of w){const tt=l+x2+' ';if(g.measureText(tt).width>mw&&l){g.fillText(l.trim(),x,y+n*lh);l=x2+' ';if(++n>=max-1)break}else l=tt}g.fillText(l.trim(),x,y+n*lh);return n+1}
+function draw(c,img){const g=c.g,d=c.d,dark=d.bg==='#0a0a0b',fg=dark?'#fff':'#0a0a0b',mu=dark?'rgba(255,255,255,.6)':'#686763';g.fillStyle=d.bg;g.fillRect(0,0,CW,CH);let y0=0;
+ if(img){g.save();g.beginPath();g.rect(0,0,CW,500);g.clip();const s=Math.max(CW/img.width,500/img.height);g.drawImage(img,(CW-img.width*s)/2,(500-img.height*s)/2,img.width*s,img.height*s);g.restore();y0=500}
+ g.fillStyle=mu;g.font='500 24px "IBM Plex Mono",monospace';g.textBaseline='alphabetic';g.fillText(String(c.i+1).padStart(2,'0')+' / 08',48,y0+64);
+ let fs=img?120:170;g.fillStyle=fg;do{g.font=`700 ${fs}px "Inter Tight",sans-serif`;fs-=6}while(g.measureText(d.k).width>CW-96&&fs>40);const ky=y0+(img?190:290);g.fillText(d.k,48,ky);
+ g.font='500 25px "IBM Plex Mono",monospace';g.fillStyle=mu;const n=wrap(g,d.l.toUpperCase(),48,ky+50,CW-96,34,3);
+ g.fillStyle=fg;g.font=`600 ${img?40:52}px "Inter Tight",sans-serif`;const ty=img?CH-130:CH-250;wrap(g,d.t,48,ty,CW-96,img?46:58,3);
+ g.fillStyle=mu;g.font='500 22px "IBM Plex Mono",monospace';g.fillText(d.s.toUpperCase().slice(0,44),48,CH-48);c.tex.needsUpdate=true}
+CARDS.forEach((d,i)=>{const cv=document.createElement('canvas');cv.width=CW;cv.height=CH;const tex=new THREE.CanvasTexture(cv);tex.colorSpace=THREE.SRGBColorSpace;tex.anisotropy=4;
+ const m=new THREE.Mesh(geo,new THREE.ShaderMaterial({uniforms:{map:{value:tex},asp:{value:.75}},vertexShader:VS,fragmentShader:FS,side:THREE.DoubleSide}));
+ const c={i,d,cv,g:cv.getContext('2d'),tex,m,img:null};draw(c);sc.add(m);cards.push(c);
+ if(d.img){const im=new Image();im.onload=()=>{c.img=im;draw(c,im)};im.src=d.img}});
+document.fonts.load('700 100px "Inter Tight"').then(()=>document.fonts.load('500 20px "IBM Plex Mono"')).then(()=>cards.forEach(c=>draw(c,c.img)));
+/* scroll + layout */
+const track=$('#track'),t1=$('#t1'),t2=$('#t2'),cross=$('#cross'),rule=$('#rule'),cap=$('#cap'),lab=$('#lab'),nx=$('#nx'),pv=$('#pv');
+let p=0,tp=0,vw=1,vh=1,visW=9,visH=5,gs=1.5,hov=-1,mx=0,my=0;
+const span=()=>track.offsetHeight-innerHeight,goP=v=>scrollTo({top:clamp(v)*span(),behavior:'smooth'});
+function size(){vw=innerWidth;vh=innerHeight;ren.setSize(vw,vh,false);cam.aspect=vw/vh;cam.updateProjectionMatrix();visH=2*8*Math.tan(THREE.MathUtils.degToRad(17.5));visW=visH*cam.aspect;gs=Math.min(1.7,visW/3.3)}
+addEventListener('resize',size);size();
+addEventListener('scroll',()=>{tp=clamp(scrollY/span())},{passive:true});tp=clamp(scrollY/span());p=tp;
+pv.onclick=()=>goP(Math.round(tp*5)/5-.2);nx.onclick=()=>{if(tp>.97)$('#exp').scrollIntoView({behavior:'smooth'});else goP(Math.round(tp*5)/5+.2)};
+addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY;const r=new THREE.Raycaster(),v=new THREE.Vector2(mx/vw*2-1,-(my/vh)*2+1);r.setFromCamera(v,cam);const h=r.intersectObjects(cards.slice(0,6).map(c=>c.m));hov=h.length&&p>.9?cards.findIndex(c=>c.m===h[0].object):-1;cvs.style.cursor=hov>=0?'pointer':'default'});
+cvs.addEventListener('click',()=>{if(hov>=0){$('#exp').scrollIntoView({behavior:'smooth'});setTimeout(()=>pick(CARDS[hov].r),500)}});
+const X=new THREE.Vector3(1,0,0),Z=new THREE.Vector3(0,0,1),tmp=new THREE.Vector3(),sp=new THREE.Vector3(),M4=new THREE.Matrix4(),q1=new THREE.Quaternion(),q0=new THREE.Quaternion(),ONE=new THREE.Quaternion();
+function frame(){p+=(tp-p)*(RM?1:.09);const ph=Math.min(1,p/.72),q=ss(clamp((p-.72)/.2));
+ cards.forEach((c,i)=>{const u=.18-i*.11+ph*.78,uu=clamp(u,0,1),m=c.m;curve.getPointAt(uu,sp);curve.getTangentAt(uu,tmp);
+  const x=tmp.multiplyScalar(.55).addScaledVector(X,.45).normalize(),y=new THREE.Vector3().crossVectors(Z,x).normalize(),z=new THREE.Vector3().crossVectors(x,y);M4.makeBasis(x,y,z);q1.setFromRotationMatrix(M4);
+  let s=.8*Math.min(ss(clamp(u/.05)),ss(clamp((1-u)/.05)));
+  if(i<6){const col=i%3,row=Math.floor(i/3),slot=new THREE.Vector3((col-1)*.9*gs*1.14,(.5-row)*1.2*gs*1.1,0);sp.lerp(slot,q);q1.slerp(ONE,q);s+=(gs-s)*q}else s*=1-q;
+  m.position.copy(sp);m.quaternion.copy(q1);m.scale.setScalar(Math.max(s,.0001));m.visible=s>.002});
+ const a=ss(clamp(p/.34));t1.style.transform=`translateX(${-a*70}vw)`;t2.style.transform=`translateX(${a*70}vw)`;
+ cross.style.opacity=ss(clamp((p-.3)/.14))*(1-ss(clamp((p-.74)/.08)));rule.style.transform=`scaleX(${ss(clamp((p-.8)/.14))})`;cap.style.opacity=1-ss(clamp(p/.22));
+ nx.textContent=tp>.97?'KHÁM PHÁ HỒ SƠ ↓':'→';
+ if(hov>=0){lab.textContent=CARDS[hov].t;lab.style.left=mx+'px';lab.style.top=my+'px';lab.style.opacity=1}else lab.style.opacity=0;
+ ren.render(sc,cam);requestAnimationFrame(frame)}
+frame();
+</script></body></html>
