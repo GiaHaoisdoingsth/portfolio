@@ -1,0 +1,1939 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinetic Portfolio Blueprint — [Your name]</title>
+    <meta
+      name="description"
+      content="Interactive kinetic typography hero and structured portfolio layout with SOW metrics and 3D work achievement shelves."
+    />
+    <meta property="og:title" content="Kinetic Portfolio Blueprint — [Your name]" />
+    <meta
+      property="og:description"
+      content="Interactive kinetic typography hero and structured portfolio layout with SOW metrics and 3D work achievement shelves."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Syne, Plus Jakarta Sans, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS v4 Browser CDN for zero-build GitHub Pages deployment -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      :root {
+        --bg-canvas: #f4f3ef;
+        --bg-card: #eeede8;
+        --ink-primary: #111111;
+        --accent-blue: #2563eb;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        background-color: var(--bg-canvas);
+        color: var(--ink-primary);
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        background-color: var(--bg-canvas);
+        color: var(--ink-primary);
+        overflow-x: hidden;
+      }
+
+      .font-display-hero {
+        font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+      }
+
+      .font-mono-code {
+        font-family: 'JetBrains Mono', monospace;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .placeholder-surface {
+        background-color: #ebe9e2;
+        background-image: radial-gradient(#11111118 1px, transparent 1px);
+        background-size: 16px 16px;
+      }
+    </style>
+  <script src="/_aistudio-iframe.js?v=1f94f900"></script></head>
+  <body class="min-h-screen bg-[#F4F3EF] text-[#111111]">
+    <!-- STICKY 3-ZONE TOP BAR -->
+    <header class="sticky top-0 z-40 border-b border-[#111111]/10 bg-[#F4F3EF]/90 backdrop-blur-md">
+      <div class="mx-auto flex max-w-[1380px] items-center justify-between gap-8 px-5 py-4 sm:px-8">
+        <a
+          href="#hero"
+          class="text-base font-extrabold tracking-tight text-[#111111] whitespace-nowrap shrink-0"
+        >
+          [Your name]
+        </a>
+
+        <nav
+          aria-label="Primary Navigation"
+          class="hidden md:flex items-center gap-7 text-xs font-semibold text-[#111111]/75"
+        >
+          <a
+            href="#about"
+            class="hover:text-[#111111] hover:underline underline-offset-4 transition-colors whitespace-nowrap shrink-0"
+          >
+            About
+          </a>
+          <a
+            href="#experience"
+            class="hover:text-[#111111] hover:underline underline-offset-4 transition-colors whitespace-nowrap shrink-0"
+          >
+            Experience
+          </a>
+          <a
+            href="#proof"
+            class="hover:text-[#111111] hover:underline underline-offset-4 transition-colors whitespace-nowrap shrink-0"
+          >
+            SOW Metrics
+          </a>
+          <a
+            href="#work"
+            class="hover:text-[#111111] hover:underline underline-offset-4 transition-colors whitespace-nowrap shrink-0"
+          >
+            Work &amp; Posts
+          </a>
+          <a
+            href="#skills"
+            class="hover:text-[#111111] hover:underline underline-offset-4 transition-colors whitespace-nowrap shrink-0"
+          >
+            Range &amp; Process
+          </a>
+        </nav>
+
+        <div class="flex items-center gap-2.5 shrink-0">
+          <button
+            type="button"
+            onclick="openModal('contact')"
+            class="rounded-full bg-[#111111] px-4 py-2 text-xs font-bold text-[#F4F3EF] transition-colors hover:bg-[#262626] whitespace-nowrap shrink-0 cursor-pointer"
+          >
+            Say hello
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================================================================== -->
+      <!-- SECTION 1: KINETIC HERO (VISUAL CENTERPIECE TOP + INTRO SPLIT BELOW)  -->
+      <!-- ===================================================================== -->
+      <section
+        id="hero"
+        aria-label="Hero Section"
+        class="relative border-b border-[#111111]/10 pt-5 pb-12 md:pt-7 md:pb-16"
+      >
+        <div class="mx-auto max-w-[1380px] px-5 sm:px-8">
+          <div class="mb-3 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#2563EB] text-xs font-bold text-white font-mono-code">
+                1
+              </span>
+              <span class="text-xs font-semibold text-[#111111]/70">
+                Hero Section · Visual Centerpiece Top + Intro Split Below
+              </span>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="text-xs font-medium text-[#111111]/55">Display Wordmark:</span>
+              <div class="inline-flex rounded-lg border border-[#111111]/15 bg-[#EEEDE8] p-0.5">
+                <button
+                  type="button"
+                  id="btn-word-portfolio"
+                  onclick="setHeadlineMode('PORTFOLIO')"
+                  class="rounded-md px-2.5 py-1 text-xs font-semibold transition-colors bg-[#111111] text-[#F4F3EF] cursor-pointer"
+                >
+                  PORTFOLIO
+                </button>
+                <button
+                  type="button"
+                  id="btn-word-name"
+                  onclick="setHeadlineMode('[YOUR NAME]')"
+                  class="rounded-md px-2.5 py-1 text-xs font-semibold transition-colors text-[#111111]/70 hover:text-[#111111] cursor-pointer"
+                >
+                  [YOUR NAME]
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Kinetic Typography Stage -->
+          <div
+            id="kinetic-stage"
+            class="relative overflow-hidden rounded-3xl border border-[#111111]/15 bg-[#F4F3EF] px-4 py-6 sm:px-8 sm:py-9 select-none shadow-2xs"
+          >
+            <div class="mb-2 flex flex-wrap items-center justify-between gap-2 text-xs text-[#111111]/60">
+              <div class="flex items-center gap-2">
+                <span class="inline-block h-2 w-2 rounded-full bg-[#2563EB]"></span>
+                <span>
+                  Move cursor across <strong id="label-wordmark" class="text-[#111111]">PORTFOLIO</strong> to trigger liquid artwork mask
+                </span>
+              </div>
+
+              <div class="flex items-center gap-1.5" id="theme-buttons">
+                <button
+                  type="button"
+                  onclick="setHeroTheme(0)"
+                  class="rounded-md px-2 py-0.5 text-[11px] font-mono-code transition-colors bg-[#111111] text-white cursor-pointer"
+                >
+                  01
+                </button>
+                <button
+                  type="button"
+                  onclick="setHeroTheme(1)"
+                  class="rounded-md px-2 py-0.5 text-[11px] font-mono-code transition-colors bg-[#111111]/8 text-[#111111]/70 hover:bg-[#111111]/15 cursor-pointer"
+                >
+                  02
+                </button>
+                <button
+                  type="button"
+                  onclick="setHeroTheme(2)"
+                  class="rounded-md px-2 py-0.5 text-[11px] font-mono-code transition-colors bg-[#111111]/8 text-[#111111]/70 hover:bg-[#111111]/15 cursor-pointer"
+                >
+                  03
+                </button>
+                <button
+                  type="button"
+                  onclick="setHeroTheme(3)"
+                  class="rounded-md px-2 py-0.5 text-[11px] font-mono-code transition-colors bg-[#111111]/8 text-[#111111]/70 hover:bg-[#111111]/15 cursor-pointer"
+                >
+                  04
+                </button>
+              </div>
+            </div>
+
+            <div class="relative w-full overflow-hidden py-1">
+              <svg
+                id="kinetic-svg"
+                viewBox="0 0 1200 285"
+                class="w-full h-auto block overflow-visible"
+                role="img"
+                aria-label="Interactive kinetic PORTFOLIO headline with liquid trail reveal"
+              >
+                <defs>
+                  <filter id="gooey-liquid" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
+                    <feColorMatrix
+                      in="blur"
+                      mode="matrix"
+                      values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 24 -9"
+                      result="goo"
+                    />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                  </filter>
+
+                  <linearGradient id="reveal-art-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop id="grad-stop-1" offset="0%" stop-color="#93C5FD" />
+                    <stop id="grad-stop-2" offset="55%" stop-color="#F472B6" />
+                    <stop id="grad-stop-3" offset="100%" stop-color="#FEF08A" />
+                  </linearGradient>
+
+                  <clipPath id="hero-word-clip">
+                    <text
+                      id="svg-clip-text"
+                      x="600"
+                      y="208"
+                      text-anchor="middle"
+                      class="font-display-hero font-extrabold"
+                      font-size="146"
+                      letter-spacing="-4"
+                    >
+                      PORTFOLIO
+                    </text>
+                  </clipPath>
+
+                  <mask id="liquid-trail-mask">
+                    <rect x="0" y="0" width="1200" height="285" fill="black" />
+                    <g id="mask-circles-group" filter="url(#gooey-liquid)" fill="white"></g>
+                  </mask>
+                </defs>
+
+                <!-- Background organic liquid trail blobs -->
+                <g id="outer-blobs-group" filter="url(#gooey-liquid)" opacity="0.22"></g>
+
+                <!-- Solid Monumental Typography Base -->
+                <text
+                  id="svg-base-text"
+                  x="600"
+                  y="208"
+                  text-anchor="middle"
+                  fill="#111111"
+                  class="font-display-hero font-extrabold"
+                  font-size="146"
+                  letter-spacing="-4"
+                >
+                  PORTFOLIO
+                </text>
+
+                <!-- Liquid-Masked Artwork Layer Inside Typography -->
+                <g clip-path="url(#hero-word-clip)" mask="url(#liquid-trail-mask)">
+                  <rect x="0" y="0" width="1200" height="285" fill="url(#reveal-art-grad)" />
+                  <g opacity="0.88">
+                    <circle id="art-circle-1" cx="340" cy="140" r="130" fill="#FEF08A" />
+                    <circle id="art-circle-2" cx="620" cy="150" r="150" fill="#F472B6" />
+                    <circle id="art-circle-3" cx="890" cy="135" r="120" fill="#93C5FD" />
+                    <path
+                      id="art-wave"
+                      d="M 80 210 Q 320 40 580 190 T 1120 110"
+                      fill="none"
+                      stroke="#1E1B4B"
+                      stroke-width="22"
+                      stroke-linecap="round"
+                    />
+                  </g>
+                  <g stroke="#111111" stroke-opacity="0.18" stroke-width="1.5">
+                    <line x1="200" y1="0" x2="200" y2="285" />
+                    <line x1="400" y1="0" x2="400" y2="285" />
+                    <line x1="600" y1="0" x2="600" y2="285" />
+                    <line x1="800" y1="0" x2="800" y2="285" />
+                    <line x1="1000" y1="0" x2="1000" y2="285" />
+                    <line x1="0" y1="95" x2="1200" y2="95" />
+                    <line x1="0" y1="190" x2="1200" y2="190" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Intro Split Row Below Kinetic Centerpiece -->
+          <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-12 lg:items-stretch">
+            <div class="flex flex-col justify-between rounded-2xl border border-[#111111]/12 bg-white/80 p-6 sm:p-8 lg:col-span-7">
+              <div>
+                <div class="inline-flex items-center gap-2 rounded-md border border-[#111111]/15 bg-[#F4F3EF] px-3 py-1 text-xs font-medium text-[#111111]/80">
+                  <span class="h-2 w-2 rounded-full bg-emerald-600"></span>
+                  <span>Available for work</span>
+                  <span aria-hidden="true">·</span>
+                  <span class="font-mono-code">[month / year]</span>
+                </div>
+
+                <h1 class="mt-5 text-balance text-3xl font-extrabold tracking-tight text-[#111111] sm:text-4xl lg:text-[42px] lg:leading-[1.12]">
+                  <span class="block">[Your name]</span>
+                  <span class="mt-1.5 block text-[#111111]/80">[Role + niche in one line]</span>
+                </h1>
+
+                <p class="mt-4 max-w-xl text-sm font-medium leading-relaxed text-[#111111]/65 sm:text-base">
+                  [One sentence: who you help and the result you deliver]
+                </p>
+              </div>
+
+              <div class="mt-7 flex flex-wrap items-center gap-3 pt-2">
+                <a
+                  href="#work"
+                  class="inline-flex items-center gap-2 rounded-xl bg-[#111111] px-5 py-3 text-xs font-bold text-[#F4F3EF] transition-transform hover:scale-[1.01] active:scale-[0.99] whitespace-nowrap shrink-0"
+                >
+                  <span>See my work</span>
+                  <span>↓</span>
+                </a>
+                <button
+                  type="button"
+                  onclick="openModal('cv')"
+                  class="inline-flex items-center gap-2 rounded-xl border border-[#111111]/20 bg-white px-5 py-3 text-xs font-semibold text-[#111111] transition-colors hover:border-[#111111] hover:bg-[#F4F3EF] whitespace-nowrap shrink-0 cursor-pointer"
+                >
+                  <span>Download CV</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="placeholder-surface relative flex min-h-[250px] flex-col justify-between overflow-hidden rounded-2xl border border-[#111111]/15 p-6 lg:col-span-5">
+              <div class="flex items-center justify-between gap-2">
+                <span class="rounded-md bg-white/90 px-2.5 py-1 text-[11px] font-semibold text-[#111111]/75 font-mono-code">
+                  MEDIA SLOT · 16:10 / 4:3
+                </span>
+                <button
+                  type="button"
+                  onclick="openModal('media')"
+                  class="inline-flex items-center gap-1 rounded-md bg-white/90 px-2.5 py-1 text-[11px] font-semibold text-[#111111] transition-colors hover:bg-white cursor-pointer"
+                >
+                  <span>Inspect</span>
+                </button>
+              </div>
+
+              <div class="my-auto py-6 text-center">
+                <p class="text-sm font-bold text-[#111111]/80">
+                  [Portrait or 15-second intro video]
+                </p>
+                <p class="mt-1 text-xs text-[#111111]/55">
+                  Drop portrait image or short intro reel here
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between border-t border-[#111111]/10 pt-3 text-[11px] font-mono-code text-[#111111]/55">
+                <span>[Placeholder: Hero Media]</span>
+                <span>Scroll for Story, Experience &amp; SOW ↓</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 flex flex-wrap items-center justify-between gap-4 border-t border-[#111111]/10 pt-3 text-xs font-mono-code text-[#111111]/65">
+            <div class="flex items-center gap-2">
+              <span class="font-semibold text-[#111111]">[Role + niche in one line]</span>
+              <span aria-hidden="true">·</span>
+              <span>[Your name]</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-3">
+              <a href="#about" class="hover:text-[#111111] underline-offset-4 hover:underline">02. ABOUT</a>
+              <span>/</span>
+              <a href="#experience" class="hover:text-[#111111] underline-offset-4 hover:underline">03. EXPERIENCE</a>
+              <span>/</span>
+              <a href="#proof" class="hover:text-[#111111] underline-offset-4 hover:underline">04. SOW METRICS</a>
+              <span>/</span>
+              <a href="#work" class="hover:text-[#111111] underline-offset-4 hover:underline">05. ALL WORK SHELVES</a>
+              <span>/</span>
+              <a href="#skills" class="hover:text-[#111111] underline-offset-4 hover:underline">06. RANGE &amp; PROCESS</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================== -->
+      <!-- SECTION 2: ABOUT (MOVED UP FROM #8)                                   -->
+      <!-- ===================================================================== -->
+      <section id="about" aria-label="About me" class="border-b border-[#111111]/10 py-14 md:py-20">
+        <div class="mx-auto max-w-[1380px] px-5 sm:px-8">
+          <div class="mb-6 flex items-center gap-3">
+            <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#2563EB] text-xs font-bold text-white font-mono-code">
+              2
+            </span>
+            <span class="text-xs font-bold text-[#2563EB]">
+              About · Personal Story &amp; Direction (Moved up from #8)
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-stretch">
+            <div class="lg:col-span-4">
+              <div class="placeholder-surface flex h-full min-h-[320px] flex-col items-center justify-center rounded-2xl border border-[#111111]/12 p-6 text-center">
+                <span class="text-sm font-semibold text-[#111111]/75">[Portrait]</span>
+                <span class="mt-1 text-xs font-mono-code text-[#111111]/45">
+                  3:4 Editorial Portrait Slot
+                </span>
+              </div>
+            </div>
+
+            <div class="flex flex-col justify-between lg:col-span-8">
+              <div>
+                <div class="text-xs font-bold text-[#2563EB]">About</div>
+                <h2 class="mt-1 text-balance text-2xl font-extrabold tracking-tight text-[#111111] sm:text-3xl">
+                  [One-line story headline]
+                </h2>
+
+                <div class="mt-5 space-y-3.5">
+                  <div class="rounded-xl border border-[#111111]/12 bg-[#EEEDE8]/70 px-5 py-4 text-xs font-medium text-[#111111]/75">
+                    [Why I started — creative storytelling &amp; digital culture foundation]
+                  </div>
+                  <div class="rounded-xl border border-[#111111]/12 bg-[#EEEDE8]/70 px-5 py-4 text-xs font-medium text-[#111111]/75">
+                    [The project that changed things — scaling social, partnerships &amp; flagship activations]
+                  </div>
+                  <div class="rounded-xl border border-[#111111]/12 bg-[#EEEDE8]/70 px-5 py-4 text-xs font-medium text-[#111111]/75">
+                    [My working philosophy, one sentence — translating brand philosophy into engaging visuals]
+                  </div>
+                </div>
+
+                <div class="mt-4 flex flex-wrap items-center gap-2 text-xs font-semibold text-[#111111]/70">
+                  <span class="text-[#111111]">Interests:</span>
+                  <span>[Hobby 01]</span>
+                  <span aria-hidden="true">·</span>
+                  <span>[Hobby 02]</span>
+                  <span aria-hidden="true">·</span>
+                  <span>[Hobby 03]</span>
+                </div>
+              </div>
+
+              <div class="mt-5 rounded-xl border border-[#111111]/12 bg-white/90 px-6 py-5">
+                <h3 class="text-sm font-extrabold text-[#111111]">Looking for</h3>
+                <p class="mt-1.5 text-xs font-medium text-[#111111]/60">
+                  [Roles · industries · location]
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================== -->
+      <!-- SECTION 3: EXPERIENCE (MOVED UP FROM #7)                              -->
+      <!-- ===================================================================== -->
+      <section
+        id="experience"
+        aria-label="Experience and education"
+        class="border-b border-[#111111]/10 py-14 md:py-20"
+      >
+        <div class="mx-auto max-w-[1380px] px-5 sm:px-8">
+          <div class="mb-3 flex items-center gap-3">
+            <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#2563EB] text-xs font-bold text-white font-mono-code">
+              3
+            </span>
+            <span class="text-xs font-bold text-[#2563EB]">
+              Experience · Work &amp; Leadership Track Record (Moved up from #7)
+            </span>
+          </div>
+
+          <h2 class="text-balance text-2xl font-extrabold tracking-tight text-[#111111] sm:text-3xl">
+            Where I have worked
+          </h2>
+
+          <div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-12">
+            <div class="space-y-3.5 lg:col-span-7">
+              <div class="text-xs font-bold uppercase tracking-wider text-[#111111]/55 font-mono-code">
+                Work Experience (5 Role Slots per CV Structure)
+              </div>
+              <div class="rounded-xl border border-[#111111]/12 bg-white/85 px-6 py-4">
+                <h3 class="text-sm font-extrabold text-[#111111]">[Role 01 · Brand / F&amp;B Organisation]</h3>
+                <p class="mt-1 text-xs font-medium text-[#111111]/60">[Dates] · [End-to-end short-form video scripting, shooting &amp; editing impact]</p>
+              </div>
+              <div class="rounded-xl border border-[#111111]/12 bg-white/85 px-6 py-4">
+                <h3 class="text-sm font-extrabold text-[#111111]">[Role 02 · Wedding / Lifestyle Brand]</h3>
+                <p class="mt-1 text-xs font-medium text-[#111111]/60">[Dates] · [Cross-platform content creation &amp; digital calendar adaptation impact]</p>
+              </div>
+              <div class="rounded-xl border border-[#111111]/12 bg-white/85 px-6 py-4">
+                <h3 class="text-sm font-extrabold text-[#111111]">[Role 03 · Craft Chocolate / Multi-Sub-Brand Ecosystem]</h3>
+                <p class="mt-1 text-xs font-medium text-[#111111]/60">[Dates] · [Multi-channel operations (FB, IG, Threads) &amp; monthly analytics impact]</p>
+              </div>
+              <div class="rounded-xl border border-[#111111]/12 bg-white/85 px-6 py-4">
+                <h3 class="text-sm font-extrabold text-[#111111]">[Role 04 · Digital Creator Channel (200K+ Community)]</h3>
+                <p class="mt-1 text-xs font-medium text-[#111111]/60">[Dates] · [Trend research, shooting, on-cam &amp; voice-over execution impact]</p>
+              </div>
+              <div class="rounded-xl border border-[#111111]/12 bg-white/85 px-6 py-4">
+                <h3 class="text-sm font-extrabold text-[#111111]">[Role 05 · Cultural &amp; Psychological Event Series]</h3>
+                <p class="mt-1 text-xs font-medium text-[#111111]/60">[Dates] · [End-to-end event ops, stage timeline control &amp; speaker alignment]</p>
+              </div>
+            </div>
+
+            <div class="space-y-4 lg:col-span-5">
+              <div class="text-xs font-bold uppercase tracking-wider text-[#111111]/55 font-mono-code">
+                Leadership Activities, Education &amp; Credentials
+              </div>
+
+              <div class="rounded-xl border border-[#111111]/12 bg-white/85 px-6 py-5">
+                <h3 class="text-sm font-extrabold text-[#111111]">
+                  Activities &amp; Partnership Leadership
+                </h3>
+                <div class="mt-3 space-y-3 border-t border-[#111111]/10 pt-3">
+                  <div>
+                    <div class="text-xs font-bold text-[#111111]">
+                      [Activity Role 01 · Partnership &amp; Sponsorship Ops Manager]
+                    </div>
+                    <div class="mt-0.5 text-xs text-[#111111]/60">
+                      [Dates] · [B2B contracts, sponsor budget &amp; UGC campaign impact]
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-[#111111]">
+                      [Activity Role 02 · Partnership Manager &amp; Campaign Executive]
+                    </div>
+                    <div class="mt-0.5 text-xs text-[#111111]/60">
+                      [Dates] · [Brand activation co-direction &amp; university media partner network]
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold text-[#111111]">
+                      [Activity Role 03 · Communications &amp; PR Collaborator]
+                    </div>
+                    <div class="mt-0.5 text-xs text-[#111111]/60">
+                      [Dates] · [Flagship university event logistics &amp; vendor liaison]
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-xl border border-[#111111]/12 bg-white/85 px-6 py-5">
+                <h3 class="text-sm font-extrabold text-[#111111]">Education</h3>
+                <p class="mt-1.5 text-xs font-medium text-[#111111]/60">
+                  [Degree · University · Years · GPA Placeholder]
+                </p>
+              </div>
+
+              <div class="rounded-xl border border-[#111111]/12 bg-white/85 px-6 py-5">
+                <h3 class="text-sm font-extrabold text-[#111111]">Certificates &amp; Training</h3>
+                <p class="mt-1.5 text-xs font-medium text-[#111111]/60">
+                  [Language Certificate · Score] · [Journalism &amp; Media Certificate · Organisation]
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================== -->
+      <!-- SECTION 4: WORKED WITH & SOW IMPACT BREAKDOWN                         -->
+      <!-- ===================================================================== -->
+      <section
+        id="proof"
+        aria-label="Worked with and SOW metrics breakdown"
+        class="border-b border-[#111111]/10 py-14 md:py-20"
+      >
+        <div class="mx-auto max-w-[1380px] px-5 sm:px-8">
+          <div class="mb-3 flex items-center gap-3">
+            <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#2563EB] text-xs font-bold text-white font-mono-code">
+              4
+            </span>
+            <span class="text-xs font-bold text-[#2563EB]">
+              Worked with &amp; SOW Impact Breakdown (Subdivided by 4 Core SOWs from CV)
+            </span>
+          </div>
+
+          <h2 class="text-balance text-2xl font-extrabold tracking-tight text-[#111111] sm:text-3xl">
+            Impact metrics organized by Scope of Work (SOW)
+          </h2>
+          <p class="mt-1.5 max-w-2xl text-xs font-medium text-[#111111]/65 sm:text-sm">
+            Structured into 4 clear SOW pillars matching your CV track record so recruiters can scan numbers by discipline.
+          </p>
+
+          <!-- Worked With Logo Strip -->
+          <div class="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
+            <div class="placeholder-surface rounded-2xl border border-[#111111]/12 p-5">
+              <div class="flex items-center justify-between text-xs font-bold text-[#111111]">
+                <span>Worked with · F&amp;B, Lifestyle &amp; Media Brands</span>
+                <span class="font-mono-code text-[#111111]/50">[5 Brand Slots]</span>
+              </div>
+              <div class="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-5">
+                <div class="rounded-lg border border-dashed border-[#111111]/15 bg-white/75 py-2.5 text-center text-xs font-mono-code text-[#111111]/60">[Brand 01]</div>
+                <div class="rounded-lg border border-dashed border-[#111111]/15 bg-white/75 py-2.5 text-center text-xs font-mono-code text-[#111111]/60">[Brand 02]</div>
+                <div class="rounded-lg border border-dashed border-[#111111]/15 bg-white/75 py-2.5 text-center text-xs font-mono-code text-[#111111]/60">[Sub-brand 03]</div>
+                <div class="rounded-lg border border-dashed border-[#111111]/15 bg-white/75 py-2.5 text-center text-xs font-mono-code text-[#111111]/60">[Sub-brand 04]</div>
+                <div class="rounded-lg border border-dashed border-[#111111]/15 bg-white/75 py-2.5 text-center text-xs font-mono-code text-[#111111]/60">[Channel 05]</div>
+              </div>
+            </div>
+
+            <div class="placeholder-surface rounded-2xl border border-[#111111]/12 p-5">
+              <div class="flex items-center justify-between text-xs font-bold text-[#111111]">
+                <span>Worked with · Corporate Sponsors, NGOs &amp; Youth Orgs</span>
+                <span class="font-mono-code text-[#111111]/50">[5 Partner/Org Slots]</span>
+              </div>
+              <div class="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-5">
+                <div class="rounded-lg border border-dashed border-[#111111]/15 bg-white/75 py-2.5 text-center text-xs font-mono-code text-[#111111]/60">[Sponsor 01]</div>
+                <div class="rounded-lg border border-dashed border-[#111111]/15 bg-white/75 py-2.5 text-center text-xs font-mono-code text-[#111111]/60">[Sponsor 02]</div>
+                <div class="rounded-lg border border-dashed border-[#111111]/15 bg-white/75 py-2.5 text-center text-xs font-mono-code text-[#111111]/60">[Org 03]</div>
+                <div class="rounded-lg border border-dashed border-[#111111]/15 bg-white/75 py-2.5 text-center text-xs font-mono-code text-[#111111]/60">[Org 04]</div>
+                <div class="rounded-lg border border-dashed border-[#111111]/15 bg-white/75 py-2.5 text-center text-xs font-mono-code text-[#111111]/60">[Event 05]</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SOW Filter Tabs -->
+          <div id="sow-tabs" class="mt-6 flex flex-wrap items-center gap-2"></div>
+
+          <!-- SOW Pillars Grid -->
+          <div id="sow-grid" class="mt-6 grid grid-cols-1 gap-5 lg:grid-cols-2"></div>
+        </div>
+      </section>
+
+      <!-- ===================================================================== -->
+      <!-- SECTION 5: ALL WORK ACHIEVEMENTS ARCHIVE (HOVER 3D BOOK SHELVES)      -->
+      <!-- ===================================================================== -->
+      <section
+        id="work"
+        aria-label="Selected work and achievement shelves"
+        class="border-b border-[#111111]/10 bg-[#F4F3EF] py-14 md:py-20"
+      >
+        <div id="posts" class="mx-auto max-w-[1380px] px-5 sm:px-8">
+          <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <div class="mb-2.5 flex flex-wrap items-center gap-2.5">
+                <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#2563EB] text-xs font-bold text-white font-mono-code">
+                  5
+                </span>
+                <span class="text-xs font-bold text-[#2563EB]">
+                  All Work Achievements Archive · Hover to Explore Top Selected &amp; 4 Shelves
+                </span>
+                <span class="inline-flex items-center gap-1 rounded-full bg-[#1D4ED8]/10 px-2.5 py-0.5 text-[11px] font-semibold text-[#1D4ED8]">
+                  <span>Lia chuột qua từng kệ &amp; gáy sách để xem tức thì</span>
+                </span>
+              </div>
+              <h2 class="text-balance text-2xl font-extrabold tracking-tight text-[#111111] sm:text-3xl">
+                All my work achievements — organized into Top Selected &amp; 4 specialized shelves
+              </h2>
+            </div>
+
+            <div class="inline-flex rounded-lg border border-[#111111]/15 bg-[#EEEDE8] p-0.5 self-start md:self-auto">
+              <button
+                type="button"
+                id="btn-mode-3d"
+                onclick="setArchiveViewMode('3d-shelf')"
+                class="inline-flex items-center gap-1.5 rounded-md px-3 py-1 text-xs font-semibold transition-colors bg-[#111111] text-[#F4F3EF] cursor-pointer"
+              >
+                <span>Interactive Hover 3D Shelf</span>
+              </button>
+              <button
+                type="button"
+                id="btn-mode-all"
+                onclick="setArchiveViewMode('all-shelves')"
+                class="inline-flex items-center gap-1.5 rounded-md px-3 py-1 text-xs font-semibold transition-colors text-[#111111]/70 hover:text-[#111111] cursor-pointer"
+              >
+                <span>All 4 Shelves + Top Selected</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 5 Shelf Selector Cards (Hover or Click) -->
+          <div
+            id="shelf-selector-cards"
+            role="group"
+            aria-label="Hover or click to switch work achievement shelf"
+            class="mt-6 grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-5"
+          ></div>
+
+          <!-- Dynamic Archive Stage Container -->
+          <div id="archive-stage-container" class="mt-5"></div>
+        </div>
+      </section>
+
+      <!-- ===================================================================== -->
+      <!-- SECTION 6: RANGE & PROCESS COMBINED (ORIGINAL #5 + #6)                -->
+      <!-- ===================================================================== -->
+      <section
+        id="skills"
+        aria-label="Range and process workflow combined"
+        class="border-b border-[#111111]/10 py-14 md:py-20"
+      >
+        <div id="process" class="mx-auto max-w-[1380px] px-5 sm:px-8">
+          <div class="mb-3 flex items-center gap-3">
+            <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#2563EB] text-xs font-bold text-white font-mono-code">
+              6
+            </span>
+            <span class="text-xs font-bold text-[#2563EB]">
+              Range &amp; Process · End-to-End Workflow by Function (Original #5 + #6 Combined)
+            </span>
+          </div>
+
+          <h2 class="text-balance text-2xl font-extrabold tracking-tight text-[#111111] sm:text-3xl">
+            How a brief becomes a result — end to end, by function
+          </h2>
+          <p class="mt-1.5 max-w-2xl text-xs font-medium text-[#111111]/65 sm:text-sm">
+            Combines your 5 functional skill areas (Range) directly with each step of your execution workflow (Process) and sample deliverables.
+          </p>
+
+          <div class="mt-9 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
+            <div class="relative flex flex-col justify-between rounded-2xl border border-[#111111]/12 bg-white/85 p-5">
+              <div>
+                <div class="flex items-center justify-between gap-2 border-b border-[#111111]/10 pb-3.5">
+                  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-[#111111] bg-[#F4F3EF] text-xs font-extrabold text-[#111111] font-mono-code">1</div>
+                  <span class="text-xs font-extrabold text-[#2563EB]">[Brief &amp; insight]</span>
+                </div>
+                <h3 class="mt-4 text-sm font-extrabold text-[#111111]">Strategy &amp; planning</h3>
+                <p class="mt-1.5 text-xs font-medium leading-relaxed text-[#111111]/65">[2–3 skills · e.g. Social audit, audience insight, campaign angle]</p>
+              </div>
+              <div class="mt-5 border-t border-[#111111]/8 pt-3">
+                <button type="button" onclick="openSampleModal('[Brief & insight]', '[Sample: brief]')" class="text-xs font-semibold text-[#111111]/75 underline decoration-[#111111]/30 underline-offset-4 hover:text-[#2563EB] cursor-pointer">[Sample: brief] →</button>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col justify-between rounded-2xl border border-[#111111]/12 bg-white/85 p-5">
+              <div>
+                <div class="flex items-center justify-between gap-2 border-b border-[#111111]/10 pb-3.5">
+                  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-[#111111] bg-[#F4F3EF] text-xs font-extrabold text-[#111111] font-mono-code">2</div>
+                  <span class="text-xs font-extrabold text-[#2563EB]">[Plan &amp; calendar]</span>
+                </div>
+                <h3 class="mt-4 text-sm font-extrabold text-[#111111]">Copy &amp; content</h3>
+                <p class="mt-1.5 text-xs font-medium leading-relaxed text-[#111111]/65">[2–3 skills · e.g. Content calendar, bilingual copywriting, script hooks]</p>
+              </div>
+              <div class="mt-5 border-t border-[#111111]/8 pt-3">
+                <button type="button" onclick="openSampleModal('[Plan & calendar]', '[Sample: calendar]')" class="text-xs font-semibold text-[#111111]/75 underline decoration-[#111111]/30 underline-offset-4 hover:text-[#2563EB] cursor-pointer">[Sample: calendar] →</button>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col justify-between rounded-2xl border border-[#111111]/12 bg-white/85 p-5">
+              <div>
+                <div class="flex items-center justify-between gap-2 border-b border-[#111111]/10 pb-3.5">
+                  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-[#111111] bg-[#F4F3EF] text-xs font-extrabold text-[#111111] font-mono-code">3</div>
+                  <span class="text-xs font-extrabold text-[#2563EB]">[Create &amp; produce]</span>
+                </div>
+                <h3 class="mt-4 text-sm font-extrabold text-[#111111]">Production &amp; editing</h3>
+                <p class="mt-1.5 text-xs font-medium leading-relaxed text-[#111111]/65">[2–3 skills · e.g. On-set shooting, CapCut editing, voice-over / on-cam]</p>
+              </div>
+              <div class="mt-5 border-t border-[#111111]/8 pt-3">
+                <button type="button" onclick="openSampleModal('[Create & produce]', '[Sample: shoot list]')" class="text-xs font-semibold text-[#111111]/75 underline decoration-[#111111]/30 underline-offset-4 hover:text-[#2563EB] cursor-pointer">[Sample: shoot list] →</button>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col justify-between rounded-2xl border border-[#111111]/12 bg-white/85 p-5">
+              <div>
+                <div class="flex items-center justify-between gap-2 border-b border-[#111111]/10 pb-3.5">
+                  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-[#111111] bg-[#F4F3EF] text-xs font-extrabold text-[#111111] font-mono-code">4</div>
+                  <span class="text-xs font-extrabold text-[#2563EB]">[Activate &amp; partner]</span>
+                </div>
+                <h3 class="mt-4 text-sm font-extrabold text-[#111111]">Community &amp; partners</h3>
+                <p class="mt-1.5 text-xs font-medium leading-relaxed text-[#111111]/65">[2–3 skills · e.g. B2B sponsorship ops, media partners, event logistics]</p>
+              </div>
+              <div class="mt-5 border-t border-[#111111]/8 pt-3">
+                <button type="button" onclick="openSampleModal('[Activate & partner]', '[Sample: partner kit]')" class="text-xs font-semibold text-[#111111]/75 underline decoration-[#111111]/30 underline-offset-4 hover:text-[#2563EB] cursor-pointer">[Sample: partner kit] →</button>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col justify-between rounded-2xl border border-[#111111]/12 bg-white/85 p-5">
+              <div>
+                <div class="flex items-center justify-between gap-2 border-b border-[#111111]/10 pb-3.5">
+                  <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-[#111111] bg-[#F4F3EF] text-xs font-extrabold text-[#111111] font-mono-code">5</div>
+                  <span class="text-xs font-extrabold text-[#2563EB]">[Publish &amp; report]</span>
+                </div>
+                <h3 class="mt-4 text-sm font-extrabold text-[#111111]">Reporting &amp; optimization</h3>
+                <p class="mt-1.5 text-xs font-medium leading-relaxed text-[#111111]/65">[2–3 skills · e.g. Multi-channel publishing, social listening, KPI audit]</p>
+              </div>
+              <div class="mt-5 border-t border-[#111111]/8 pt-3">
+                <button type="button" onclick="openSampleModal('[Publish & report]', '[Sample: report]')" class="text-xs font-semibold text-[#111111]/75 underline decoration-[#111111]/30 underline-offset-4 hover:text-[#2563EB] cursor-pointer">[Sample: report] →</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-[#111111]/10 bg-white/65 px-5 py-3.5 text-xs font-mono-code text-[#111111]/75">
+            <span class="font-bold text-[#111111]">Tools &amp; Tech Stack across Workflow:</span>
+            <div class="flex flex-wrap items-center gap-2">
+              <span>[Tool 01 · Notion]</span>
+              <span aria-hidden="true">·</span>
+              <span>[Tool 02 · Canva]</span>
+              <span aria-hidden="true">·</span>
+              <span>[Tool 03 · CapCut]</span>
+              <span aria-hidden="true">·</span>
+              <span>[Tool 04 · Google Workspace]</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================== -->
+      <!-- SECTION 7: REFERENCES                                                 -->
+      <!-- ===================================================================== -->
+      <section
+        id="references"
+        aria-label="References and testimonials"
+        class="border-b border-[#111111]/10 py-14 md:py-20"
+      >
+        <div class="mx-auto max-w-[1380px] px-5 sm:px-8">
+          <div class="mb-3 flex items-center gap-3">
+            <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#2563EB] text-xs font-bold text-white font-mono-code">
+              7
+            </span>
+            <span class="text-xs font-bold text-[#2563EB]">References</span>
+          </div>
+
+          <h2 class="text-balance text-2xl font-extrabold tracking-tight text-[#111111] sm:text-3xl">
+            What people I worked with say
+          </h2>
+
+          <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+            <blockquote class="flex flex-col justify-between rounded-2xl border border-[#111111]/12 bg-white/85 p-6">
+              <p class="text-xs font-medium italic text-[#111111]/70">“[One or two sentences]”</p>
+              <footer class="mt-5">
+                <div class="text-sm font-extrabold text-[#111111]">[Name]</div>
+                <div class="mt-0.5 text-xs font-medium text-[#111111]/55">[Role, organisation]</div>
+              </footer>
+            </blockquote>
+            <blockquote class="flex flex-col justify-between rounded-2xl border border-[#111111]/12 bg-white/85 p-6">
+              <p class="text-xs font-medium italic text-[#111111]/70">“[One or two sentences]”</p>
+              <footer class="mt-5">
+                <div class="text-sm font-extrabold text-[#111111]">[Name]</div>
+                <div class="mt-0.5 text-xs font-medium text-[#111111]/55">[Role, organisation]</div>
+              </footer>
+            </blockquote>
+            <blockquote class="flex flex-col justify-between rounded-2xl border border-[#111111]/12 bg-white/85 p-6">
+              <p class="text-xs font-medium italic text-[#111111]/70">“[One or two sentences]”</p>
+              <footer class="mt-5">
+                <div class="text-sm font-extrabold text-[#111111]">[Name]</div>
+                <div class="mt-0.5 text-xs font-medium text-[#111111]/55">[Role, organisation]</div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================== -->
+      <!-- SECTION 8: FOOTER CALL TO ACTION                                      -->
+      <!-- ===================================================================== -->
+      <section id="contact" aria-label="Contact call to action" class="py-14 md:py-20">
+        <div class="mx-auto max-w-[1380px] px-5 sm:px-8">
+          <div class="mb-4 flex items-center gap-3">
+            <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#2563EB] text-xs font-bold text-white font-mono-code">
+              8
+            </span>
+            <span class="text-xs font-medium text-[#111111]/60">Footer Call-to-Action</span>
+          </div>
+
+          <div class="flex flex-col justify-between gap-8 rounded-3xl bg-[#141413] px-8 py-12 text-white sm:px-12 sm:py-14 md:flex-row md:items-center">
+            <div>
+              <h2 class="text-2xl font-extrabold tracking-tight sm:text-4xl">
+                Let’s work together
+              </h2>
+              <p class="mt-2.5 text-sm font-medium text-white/65">
+                [Email · phone · social links]
+              </p>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3">
+              <button
+                type="button"
+                onclick="openModal('contact')"
+                class="rounded-full bg-white px-6 py-3 text-xs font-bold text-[#141413] transition-transform hover:scale-[1.02] hover:bg-white/90 whitespace-nowrap shrink-0 cursor-pointer"
+              >
+                Say hello
+              </button>
+              <button
+                type="button"
+                onclick="openModal('cv')"
+                class="rounded-full border border-white/30 bg-transparent px-6 py-3 text-xs font-semibold text-white transition-colors hover:border-white hover:bg-white/10 whitespace-nowrap shrink-0 cursor-pointer"
+              >
+                Download CV
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MODAL CONTAINER -->
+    <div
+      id="modal-backdrop"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black/55 p-4 backdrop-blur-xs"
+      onclick="closeModal()"
+    >
+      <div
+        id="modal-card"
+        class="relative w-full max-w-lg rounded-2xl border border-[#111111]/15 bg-[#F4F3EF] p-6 shadow-2xl sm:p-8"
+        onclick="event.stopPropagation()"
+      ></div>
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- EMBEDDED VANILLA JS FOR KINETIC HERO, SOW MATRIX & 3D HOVER BOOKSHELF   -->
+    <!-- ======================================================================= -->
+    <script>
+      // 1. HERO THEMES & LIQUID TRAIL
+      const HERO_THEMES = [
+        { bgPrimary: '#93C5FD', bgSecondary: '#F472B6', accent: '#FEF08A', ink: '#1E1B4B' },
+        { bgPrimary: '#84CC16', bgSecondary: '#14532D', accent: '#ECFCCB', ink: '#052E16' },
+        { bgPrimary: '#D97706', bgSecondary: '#78350F', accent: '#FDE68A', ink: '#FFFBEB' },
+        { bgPrimary: '#2563EB', bgSecondary: '#9333EA', accent: '#E0E7FF', ink: '#FFFFFF' },
+      ];
+
+      let trailNodes = Array.from({ length: 14 }, (_, i) => {
+        const t = i / 13;
+        return {
+          x: 620 - i * 18,
+          y: 155 + Math.sin(i * 0.6) * 12,
+          vx: 0,
+          vy: 0,
+          radius: Math.max(14, Math.round(58 * (1 - t * 0.68))),
+        };
+      });
+
+      const maskGroup = document.getElementById('mask-circles-group');
+      const outerGroup = document.getElementById('outer-blobs-group');
+      const maskCircles = [];
+      const outerCircles = [];
+
+      trailNodes.forEach((n, idx) => {
+        const mc = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        mc.setAttribute('cx', n.x);
+        mc.setAttribute('cy', n.y);
+        mc.setAttribute('r', n.radius * 1.15);
+        maskGroup.appendChild(mc);
+        maskCircles.push(mc);
+
+        if (idx < 8) {
+          const oc = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+          oc.setAttribute('cx', n.x);
+          oc.setAttribute('cy', n.y);
+          oc.setAttribute('r', n.radius * 0.9);
+          oc.setAttribute('fill', idx % 2 === 0 ? '#93C5FD' : '#F472B6');
+          outerGroup.appendChild(oc);
+          outerCircles.push(oc);
+        }
+      });
+
+      let targetX = 620;
+      let targetY = 155;
+      let framesRemaining = 0;
+      let rafId = null;
+
+      function stepTrail() {
+        const timeSec = performance.now() / 1000;
+        const head = trailNodes[0];
+        head.vx = (head.vx + (targetX - head.x) * 0.28) * 0.62;
+        head.vy = (head.vy + (targetY - head.y) * 0.28) * 0.62;
+        head.x += head.vx;
+        head.y += head.vy;
+
+        for (let i = 1; i < trailNodes.length; i++) {
+          const prev = trailNodes[i - 1];
+          const curr = trailNodes[i];
+          const spring = Math.max(0.16, 0.34 - i * 0.012);
+          const waveX = Math.cos(timeSec * 4.2 + i * 0.7) * 1.3;
+          const waveY = Math.sin(timeSec * 4.8 + i * 0.75) * 1.6;
+          curr.vx = (curr.vx + (prev.x + waveX - curr.x) * spring) * 0.64;
+          curr.vy = (curr.vy + (prev.y + waveY - curr.y) * spring) * 0.64;
+          curr.x += curr.vx;
+          curr.y += curr.vy;
+        }
+
+        trailNodes.forEach((n, idx) => {
+          maskCircles[idx].setAttribute('cx', n.x.toFixed(1));
+          maskCircles[idx].setAttribute('cy', n.y.toFixed(1));
+          if (idx < 8) {
+            outerCircles[idx].setAttribute('cx', n.x.toFixed(1));
+            outerCircles[idx].setAttribute('cy', n.y.toFixed(1));
+          }
+        });
+
+        framesRemaining--;
+        if (framesRemaining > 0) {
+          rafId = requestAnimationFrame(stepTrail);
+        } else {
+          rafId = null;
+        }
+      }
+
+      document.getElementById('kinetic-stage').addEventListener('pointermove', (e) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        targetX = Math.max(80, Math.min(1120, ((e.clientX - rect.left) / rect.width) * 1200));
+        targetY = Math.max(40, Math.min(245, ((e.clientY - rect.top) / rect.height) * 285));
+        framesRemaining = 36;
+        if (!rafId) rafId = requestAnimationFrame(stepTrail);
+      });
+
+      function setHeadlineMode(mode) {
+        const size = mode === 'PORTFOLIO' ? '152' : '132';
+        document.getElementById('svg-clip-text').textContent = mode;
+        document.getElementById('svg-clip-text').setAttribute('font-size', size);
+        document.getElementById('svg-base-text').textContent = mode;
+        document.getElementById('svg-base-text').setAttribute('font-size', size);
+        document.getElementById('label-wordmark').textContent = mode;
+
+        const btnP = document.getElementById('btn-word-portfolio');
+        const btnN = document.getElementById('btn-word-name');
+        if (mode === 'PORTFOLIO') {
+          btnP.className = 'rounded-md px-2.5 py-1 text-xs font-semibold transition-colors bg-[#111111] text-[#F4F3EF] cursor-pointer';
+          btnN.className = 'rounded-md px-2.5 py-1 text-xs font-semibold transition-colors text-[#111111]/70 hover:text-[#111111] cursor-pointer';
+        } else {
+          btnN.className = 'rounded-md px-2.5 py-1 text-xs font-semibold transition-colors bg-[#111111] text-[#F4F3EF] cursor-pointer';
+          btnP.className = 'rounded-md px-2.5 py-1 text-xs font-semibold transition-colors text-[#111111]/70 hover:text-[#111111] cursor-pointer';
+        }
+      }
+
+      function setHeroTheme(idx) {
+        const t = HERO_THEMES[idx];
+        document.getElementById('grad-stop-1').setAttribute('stop-color', t.bgPrimary);
+        document.getElementById('grad-stop-2').setAttribute('stop-color', t.bgSecondary);
+        document.getElementById('grad-stop-3').setAttribute('stop-color', t.accent);
+        document.getElementById('art-circle-1').setAttribute('fill', t.accent);
+        document.getElementById('art-circle-2').setAttribute('fill', t.bgSecondary);
+        document.getElementById('art-circle-3').setAttribute('fill', t.bgPrimary);
+        document.getElementById('art-wave').setAttribute('stroke', t.ink);
+        outerCircles.forEach((c, i) => c.setAttribute('fill', i % 2 === 0 ? t.bgPrimary : t.bgSecondary));
+
+        const btns = document.getElementById('theme-buttons').querySelectorAll('button');
+        btns.forEach((b, i) => {
+          b.className =
+            i === idx
+              ? 'rounded-md px-2 py-0.5 text-[11px] font-mono-code transition-colors bg-[#111111] text-white cursor-pointer'
+              : 'rounded-md px-2 py-0.5 text-[11px] font-mono-code transition-colors bg-[#111111]/8 text-[#111111]/70 hover:bg-[#111111]/15 cursor-pointer';
+        });
+      }
+
+      // 2. SECTION 4: SOW PILLARS DATA & RENDERING
+      const SOW_PILLARS = [
+        {
+          id: 'production',
+          index: '01',
+          title: 'Content & Video Production',
+          sub: 'Scripting · Shooting · CapCut Editing · On-Cam / Voice-over',
+          summary: '[End-to-end short-form video & visual production across platforms]',
+          deliverables: [
+            '[Scriptwriting & Storyboarding]',
+            '[On-set Shooting & Direction]',
+            '[Post-production & CapCut Editing]',
+            '[On-camera Hosting & Voice-over]',
+          ],
+          metrics: [
+            { val: '[N+]', label: '[Short-form videos produced]', hint: '[TikTok · Reels · Shorts end-to-end]' },
+            { val: '[N+]', label: '[Total organic video views]', hint: '[Aggregate cross-platform views]' },
+            { val: '[N%]', label: '[Best watch-time / retention rate]', hint: '[Top performing short-form hook]' },
+            { val: '[N+]', label: '[Channel follower community]', hint: '[Audience scale supported]' },
+          ],
+        },
+        {
+          id: 'social',
+          index: '02',
+          title: 'Social Media & Brand Comms',
+          sub: 'Multi-channel Ops · Content Calendar · UGC Campaign · Reporting',
+          summary: '[Full-funnel social channel management, copy & performance analytics]',
+          deliverables: [
+            '[Multi-channel Publishing (FB · IG · Threads · TikTok)]',
+            '[Creative Copywriting & Visual Adaptation]',
+            '[UGC & Online Minigame Execution]',
+            '[Weekly / Monthly Performance & Social Listening Reports]',
+          ],
+          metrics: [
+            { val: '[N]', label: '[Brand & sub-brand channels managed]', hint: '[Always-on multi-platform presence]' },
+            { val: '[N+]', label: '[Total campaign & UGC engagements]', hint: '[Likes, comments, shares, UGC entries]' },
+            { val: '[N%]', label: '[Peak engagement / growth rate]', hint: '[Organic community growth delta]' },
+            { val: '[N+]', label: '[Content calendars & reports delivered]', hint: '[Data-backed monthly optimization]' },
+          ],
+        },
+        {
+          id: 'partnership',
+          index: '03',
+          title: 'Partnership & Sponsorship Ops',
+          sub: 'B2B Sponsorship · Contracts & Invoicing · Media Partner Network',
+          summary: '[Corporate sponsorship acquisition, legal/admin ops & partner fulfillment]',
+          deliverables: [
+            '[B2B Sponsorship Pitching & Negotiation]',
+            '[Legal Contracts, Invoicing & Admin Governance]',
+            '[Cross-University & Media Partner Outreach]',
+            '[Sponsor Deliverable Tracking & Final Reporting]',
+          ],
+          metrics: [
+            { val: '[N+ VND]', label: '[Sponsorship budget & value handled]', hint: '[Cash + in-kind corporate sponsorship]' },
+            { val: '[N+]', label: '[Corporate & B2B partners managed]', hint: '[End-to-end contract & deliverable care]' },
+            { val: '[N+]', label: '[Media & university partners coordinated]', hint: '[Multi-campus outreach network]' },
+            { val: '[N%]', label: '[Partner deliverable fulfillment rate]', hint: '[On-time contract & KPI completion]' },
+          ],
+        },
+        {
+          id: 'event',
+          index: '04',
+          title: 'Event Ops & Brand Activation',
+          sub: 'On-ground Activation · Stage & Timeline Control · Vendor/Speaker Liaison',
+          summary: '[Large-scale youth activations, event logistics & stage direction]',
+          deliverables: [
+            '[End-to-end Event Logistics & Venue Setup]',
+            '[Stage Execution, Showflow & Timeline Control]',
+            '[On-ground Brand Activation Co-direction]',
+            '[External Vendors, Tech Crew & Keynote Speakers Liaison]',
+          ],
+          metrics: [
+            { val: '[N+]', label: '[Total attendees across flagship events]', hint: '[On-ground crowd scale & check-ins]' },
+            { val: '[N+]', label: '[Campaign & activation youth reach]', hint: '[Online-to-offline activation reach]' },
+            { val: '[N+]', label: '[Events & brand activations directed]', hint: '[From concept to stage wrap-up]' },
+            { val: '[N+]', label: '[Vendors, speakers & crew aligned]', hint: '[Cross-functional stakeholder ops]' },
+          ],
+        },
+      ];
+
+      let activeSowTab = 'all';
+
+      function renderSowSection() {
+        const tabs = [
+          { id: 'all', label: 'All 4 SOW Pillars (Matrix View)' },
+          { id: 'production', label: '01 · Content Production' },
+          { id: 'social', label: '02 · Social Media & Comms' },
+          { id: 'partnership', label: '03 · Partnership & Sponsorship' },
+          { id: 'event', label: '04 · Event & Activation' },
+        ];
+
+        document.getElementById('sow-tabs').innerHTML = tabs
+          .map(
+            (t) => `
+          <button
+            type="button"
+            onclick="activeSowTab='${t.id}'; renderSowSection()"
+            class="rounded-full border px-4 py-1.5 text-xs font-semibold transition-colors whitespace-nowrap shrink-0 cursor-pointer ${
+              activeSowTab === t.id
+                ? 'border-[#111111] bg-[#111111] text-[#F4F3EF]'
+                : 'border-[#111111]/15 bg-white/80 text-[#111111]/75 hover:border-[#111111]/40 hover:text-[#111111]'
+            }"
+          >${t.label}</button>
+        `
+          )
+          .join('');
+
+        const visible = activeSowTab === 'all' ? SOW_PILLARS : SOW_PILLARS.filter((p) => p.id === activeSowTab);
+        const gridEl = document.getElementById('sow-grid');
+        gridEl.className = `mt-6 grid grid-cols-1 gap-5 ${activeSowTab === 'all' ? 'lg:grid-cols-2' : 'lg:grid-cols-1'}`;
+        gridEl.innerHTML = visible
+          .map(
+            (p) => `
+          <div class="flex flex-col justify-between rounded-2xl border border-[#111111]/12 bg-white/85 p-6">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#111111]/10 pb-3.5">
+                <div class="flex items-center gap-2.5">
+                  <span class="font-mono-code text-sm font-extrabold text-[#2563EB]">SOW ${p.index}</span>
+                  <h3 class="text-base font-extrabold text-[#111111] sm:text-lg">${p.title}</h3>
+                </div>
+                <span class="text-xs font-medium text-[#111111]/55">${p.sub}</span>
+              </div>
+              <p class="mt-3 text-xs font-medium text-[#111111]/65">${p.summary}</p>
+              <div class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                ${p.metrics
+                  .map(
+                    (m) => `
+                  <div class="rounded-xl border border-[#111111]/10 bg-[#F4F3EF]/80 p-3.5">
+                    <div class="text-xl font-extrabold tracking-tight text-[#111111] font-mono-code sm:text-2xl">${m.val}</div>
+                    <div class="mt-1 text-xs font-bold text-[#111111]/85">${m.label}</div>
+                    <div class="mt-0.5 text-[11px] text-[#111111]/50">${m.hint}</div>
+                  </div>
+                `
+                  )
+                  .join('')}
+              </div>
+            </div>
+            <div class="mt-4 border-t border-[#111111]/8 pt-3 text-[11px] text-[#111111]/60">
+              <span class="font-bold text-[#111111]">Key Deliverables:</span> ${p.deliverables.join(' · ')}
+            </div>
+          </div>
+        `
+          )
+          .join('');
+      }
+
+      // 3. SECTION 5: HOVER-RESPONSIVE 3D BOOK SHELVES (TOP SELECTED + SHELVES 1..4)
+      const BRAND_SHELVES = [
+        {
+          id: 'top-selected',
+          shortLabel: '★ Top Selected',
+          vietnameseHint: 'Những cuốn sách / thành quả tiêu biểu nhất đã chọn lọc',
+          fullTitle: 'Top Selected · Curated Flagship Achievements Across All 4 Shelves',
+          sowFocus: 'Social Media · Event Ops · Production · Partnership & Account',
+          desc: '[Kệ sách tổng hợp những thành quả công việc xuất sắc nhất do bạn chọn lọc từ cả 4 mảng: Social Media, Sự kiện, Production và Account/Partnership]',
+        },
+        {
+          id: 'shelf-1-social',
+          shortLabel: 'Shelf 01 · Social Media (Video & Copy)',
+          vietnameseHint: 'Bài viết Social từ tất cả công ty (Video + Copywriting)',
+          fullTitle: 'Shelf 01 · Social Media Posts Across All Companies (Video & Copywriting)',
+          sowFocus: 'All Companies · Short-Form Video + Copywriting + Multi-Channel Ops',
+          desc: '[Kệ những cuốn sách tượng trưng cho các bài viết trên Social Media từ tất cả các công ty đã làm — bao gồm cả Video ngắn lẫn Copywriting trên TikTok, IG, FB, Threads]',
+        },
+        {
+          id: 'shelf-2-event',
+          shortLabel: 'Shelf 02 · Events Operated',
+          vietnameseHint: 'Những sự kiện & activation đã trực tiếp vận hành',
+          fullTitle: 'Shelf 02 · Events & Brand Activations Operated',
+          sowFocus: 'End-to-End Event Ops · Stage & Timeline Control · Brand Activation',
+          desc: '[Kệ những cuốn sách tượng trưng cho các sự kiện đã trực tiếp vận hành: từ kích hoạt thương hiệu quy mô lớn, lễ hội đại học 5,000+ người đến điều phối sân khấu & diễn giả]',
+        },
+        {
+          id: 'shelf-3-production',
+          shortLabel: 'Shelf 03 · Production (Photo & Video)',
+          vietnameseHint: 'Bộ hình, video, hình ảnh — toàn bộ mảng Production',
+          fullTitle: 'Shelf 03 · Production — Photo Sets, Video Shoots & Visual Assets',
+          sowFocus: 'Photo Sets · Scripting, Shooting & CapCut Editing · On-Cam & Voice-Over',
+          desc: '[Kệ những bộ hình (Photo Sets), dự án quay dựng Video, thiết kế hình ảnh và on-camera/voice-over — chung quy toàn bộ thành quả mảng Production]',
+        },
+        {
+          id: 'shelf-4-other',
+          shortLabel: 'Shelf 04 · Other (Partnership, Assistant & Account)',
+          vietnameseHint: 'Trợ lý dự án, Partnership B2B, điều phối Account',
+          fullTitle: 'Shelf 04 · Other — Project Assistant, Partnership & Account Operations',
+          sowFocus: 'B2B Sponsorship · Contract & Account Ops · Project/Channel Assistant',
+          desc: '[Kệ các công việc Trợ lý vận hành (Operations & Project Assistant), Đối tác & Tài trợ B2B (Partnership), quản lý hợp đồng và điều phối kiểu Account]',
+        },
+      ];
+
+      const ARCHIVE_BOOKS = [
+        // SHELF 01: SOCIAL MEDIA
+        {
+          id: 'book-s1-01',
+          code: 'SOC·01',
+          shelfId: 'shelf-1-social',
+          shelfLabel: 'Shelf 01 · Social Media',
+          company: '[Company 01 · Specialty Coffee Brand]',
+          subTag: 'Video & Reels',
+          isTop: true,
+          projectName: '[Social 01 · Coffee Storytelling Reel & Copy]',
+          sowLabel: 'Social Video + Storytelling Copywriting',
+          goal: '[Placeholder: Bài đăng Social kết hợp quay dựng short-form video và copywriting kể chuyện tối giản cho thương hiệu cà phê đặc sản trên TikTok & Instagram]',
+          result: '[Social · metric: N+ Views · N% Engagement Rate]',
+          deliverables: ['[Social Hook & Storytelling Copywriting]', '[Short-form Video Scripting & CapCut Edit]', '[Cross-platform Publishing (TikTok · IG · FB)]'],
+          spineColor: '#5B1A18',
+          textColor: '#FDE68A',
+          accent: '#EF4444',
+        },
+        {
+          id: 'book-s1-02',
+          code: 'SOC·02',
+          shelfId: 'shelf-1-social',
+          shelfLabel: 'Shelf 01 · Social Media',
+          company: '[Company 02 · Craft Cocoa (3 Sub-brands)]',
+          subTag: 'Copywriting & Threads',
+          isTop: true,
+          projectName: '[Social 02 · Viral Brand Voice Thread Series]',
+          sowLabel: 'Creative Copywriting + Community Ops',
+          goal: '[Placeholder: Chuỗi bài viết copywriting bắt nhịp văn hóa số trên Threads & Instagram, duy trì tương tác hai chiều và social listening cho hệ sinh thái 3 thương hiệu con]',
+          result: '[Social · metric: N+ Replies · N+ Reposts]',
+          deliverables: ['[Conversational Copywriting & Brand Voice]', '[Community Moderation & Comment Replies]', '[Weekly / Monthly Social Performance Report]'],
+          spineColor: '#1E3A2F',
+          textColor: '#DCFCE7',
+          accent: '#10B981',
+        },
+        {
+          id: 'book-s1-03',
+          code: 'SOC·03',
+          shelfId: 'shelf-1-social',
+          shelfLabel: 'Shelf 01 · Social Media',
+          company: '[Company 03 · Wedding Planners Brand]',
+          subTag: 'Video & Reels',
+          isTop: false,
+          projectName: '[Social 03 · Wedding Campaign Reel & Copy]',
+          sowLabel: 'Social Video + Logical Copywriting',
+          goal: '[Placeholder: Sáng tạo nội dung bài đăng (cả video ngắn và bài viết copy mạch lạc) bám sát content calendar nghiêm ngặt nhằm tối ưu độ phủ chiến dịch]',
+          result: '[Social · metric: N+ Reach · N+ Saves]',
+          deliverables: ['[Campaign Copywriting & Caption Formatting]', '[Short-form Reel Editing & Adaptation]', '[Strict Content Calendar Execution]'],
+          spineColor: '#4C1D95',
+          textColor: '#F3E8FF',
+          accent: '#A855F7',
+        },
+        {
+          id: 'book-s1-04',
+          code: 'SOC·04',
+          shelfId: 'shelf-1-social',
+          shelfLabel: 'Shelf 01 · Social Media',
+          company: '[Company 02 · Café, Kitchen & Shop]',
+          subTag: 'Carousel & UGC',
+          isTop: false,
+          projectName: '[Social 04 · 3 Sub-Brands Synced Launch Posts]',
+          sowLabel: 'Multi-Channel Copywriting + Content Calendar',
+          goal: '[Placeholder: Lên kế hoạch lịch đăng bài, viết copy và điều phối nội dung đồng bộ trên Facebook, Instagram, Threads cho cả 3 nhánh thương hiệu]',
+          result: '[Social · metric: N+ Multi-page Reach · N% ER]',
+          deliverables: ['[Cross-channel Content Scheduling & Publishing]', '[Product Storytelling Copywriting]', '[Consolidated Monthly Data Analytics]'],
+          spineColor: '#14532D',
+          textColor: '#FEF08A',
+          accent: '#22C55E',
+        },
+        {
+          id: 'book-s1-05',
+          code: 'SOC·05',
+          shelfId: 'shelf-1-social',
+          shelfLabel: 'Shelf 01 · Social Media',
+          company: '[Org 05 · BUPNON TEA365 Campaign]',
+          subTag: 'Carousel & UGC',
+          isTop: true,
+          projectName: '[Social 05 · UGC & Online Minigame Campaign]',
+          sowLabel: 'UGC Social Campaign + Minigame Copy',
+          goal: '[Placeholder: Triển khai chuỗi bài đăng chiến dịch UGC (User-Generated Content) và minigame trực tuyến tạo ra hơn 20,000+ lượt tương tác thực tế]',
+          result: '[Social · metric: 20,000+ Total Engagements]',
+          deliverables: ['[UGC Mechanics & Rule Copywriting]', '[Social Announcement & Reminder Posts]', '[Campaign Engagement Wrap-up Report]'],
+          spineColor: '#1E3A8A',
+          textColor: '#DBEAFE',
+          accent: '#3B82F6',
+        },
+
+        // SHELF 02: EVENTS OPERATED
+        {
+          id: 'book-s2-01',
+          code: 'EVT·01',
+          shelfId: 'shelf-2-event',
+          shelfLabel: 'Shelf 02 · Events Operated',
+          company: '[Org 06 · Unilever x F75 Activation]',
+          subTag: 'Brand Activation',
+          isTop: true,
+          projectName: '[Event 01 · Unilever x F75 On-Ground Activation]',
+          sowLabel: 'Event Activation Co-Direction + Media Ops',
+          goal: '[Placeholder: Đồng điều phối truyền thông tiếp thị và vận hành hoạt động kích hoạt thương hiệu (on-ground brand activation) tiếp cận hơn 5,000,000+ người trẻ]',
+          result: '[Event · metric: 5,000,000+ Youth Reach · 8 Campuses]',
+          deliverables: ['[On-ground Activation Co-direction]', '[Cross-team & Campus Execution Flow]', '[Post-activation Impact Reporting]'],
+          spineColor: '#0F172A',
+          textColor: '#F8FAFC',
+          accent: '#38BDF8',
+        },
+        {
+          id: 'book-s2-02',
+          code: 'EVT·02',
+          shelfId: 'shelf-2-event',
+          shelfLabel: 'Shelf 02 · Events Operated',
+          company: '[Org 07 · UEH Student Union Committee]',
+          subTag: 'Flagship Event',
+          isTop: true,
+          projectName: '[Event 02 · Flagship University Event (5,000+ Scale)]',
+          sowLabel: 'End-to-End Event Logistics + Crowd Control',
+          goal: '[Placeholder: Điều phối hậu cần sự kiện trọn gói từ lập kế hoạch đến thực thi cho các sự kiện trọng điểm quy mô lên tới 5,000 người tham dự]',
+          result: '[Event · metric: Up to 5,000 Attendees · On-time Delivery]',
+          deliverables: ['[Venue Booking & On-site Setup Plan]', '[5,000-Attendee Crowd Control Flow]', '[External Vendor, Technical & Performer Liaison]'],
+          spineColor: '#31102F',
+          textColor: '#FCE7F3',
+          accent: '#EC4899',
+        },
+        {
+          id: 'book-s2-03',
+          code: 'EVT·03',
+          shelfId: 'shelf-2-event',
+          shelfLabel: 'Shelf 02 · Events Operated',
+          company: '[Event 05 · Metanoia III (@the.tri.way)]',
+          subTag: 'Stage & Showflow Ops',
+          isTop: false,
+          projectName: '[Event 03 · Metanoia III Stage & Timeline Ops]',
+          sowLabel: 'Event Operations + Stage Execution + Speakers',
+          goal: '[Placeholder: Trực tiếp chỉ đạo vận hành sự kiện end-to-end, kiểm soát timeline chương trình và điều phối sân khấu mang lại trải nghiệm liền mạch cho hơn 100+ người tham dự]',
+          result: '[Event · metric: 100+ Attendees · Zero Timeline Delay]',
+          deliverables: ['[Master Run-of-Show & Timeline Control]', '[Stage Cueing & Production Crew Alignment]', '[Keynote Speaker & Vendor Coordination]'],
+          spineColor: '#3B0764',
+          textColor: '#F3E8FF',
+          accent: '#C084FC',
+        },
+
+        // SHELF 03: PRODUCTION
+        {
+          id: 'book-s3-01',
+          code: 'PRD·01',
+          shelfId: 'shelf-3-production',
+          shelfLabel: 'Shelf 03 · Production',
+          company: '[Company 01 · Specialty Coffee Production]',
+          subTag: 'Video Production',
+          isTop: true,
+          projectName: '[Prod 01 · End-to-End Short-Form Video Production]',
+          sowLabel: 'Scripting + On-Set Shooting + CapCut Editing',
+          goal: '[Placeholder: Phụ trách trọn gói quy trình sản xuất video (từ viết kịch bản, trực tiếp quay hình đến dựng hậu kỳ trên CapCut) tạo ra chuỗi video ngắn chất lượng cao]',
+          result: '[Prod · metric: N+ Videos Produced · High Retention]',
+          deliverables: ['[Visual Script & Shot List]', '[On-location Camera & Lighting Setup]', '[CapCut Editing, Color & Sound Grading]'],
+          spineColor: '#451A03',
+          textColor: '#FDE68A',
+          accent: '#F59E0B',
+        },
+        {
+          id: 'book-s3-02',
+          code: 'PRD·02',
+          shelfId: 'shelf-3-production',
+          shelfLabel: 'Shelf 03 · Production',
+          company: '[Company 02 & 03 · Brand Visual Sets]',
+          subTag: 'Photo & Visual Set',
+          isTop: false,
+          projectName: '[Prod 02 · Product Photo Sets & Visual Lookbooks]',
+          sowLabel: 'Photo Set Production + Visual Formatting',
+          goal: '[Placeholder: Thực hiện các bộ hình sản phẩm, không gian thương hiệu và thiết kế/chuyển thể bộ ấn phẩm hình ảnh (digital visual assets) chuẩn nhận diện]',
+          result: '[Prod · metric: N+ Photo Sets & Visual Packs]',
+          deliverables: ['[Moodboard & Visual Art Direction]', '[Product & Lifestyle Photo Set Curation]', '[Multi-format Visual Layout (Canva / Adobe)]'],
+          spineColor: '#3F2318',
+          textColor: '#FED7AA',
+          accent: '#F97316',
+        },
+        {
+          id: 'book-s3-03',
+          code: 'PRD·03',
+          shelfId: 'shelf-3-production',
+          shelfLabel: 'Shelf 03 · Production',
+          company: '[Channel 04 · Will & Tina Media (200K+)]',
+          subTag: 'On-Cam & Voice-Over',
+          isTop: true,
+          projectName: '[Prod 03 · Video Shooting, On-Cam & Voice-Over]',
+          sowLabel: 'On-Set Shooting + On-Camera + Voice-Over',
+          goal: '[Placeholder: Hỗ trợ trực tiếp tại set quay, dẫn hình trước ống kính (on-camera presentation) và thu âm lồng tiếng (voice-over) tạo năng lượng sinh động cho kênh 200,000+ followers]',
+          result: '[Prod · metric: 200,000+ Community · N+ Episodes]',
+          deliverables: ['[On-set Camera & Production Assistance]', '[On-camera Hosting & Acting Readiness]', '[Dynamic Voice-over Recording]'],
+          spineColor: '#1E293B',
+          textColor: '#E2E8F0',
+          accent: '#06B6D4',
+        },
+        {
+          id: 'book-s3-04',
+          code: 'PRD·04',
+          shelfId: 'shelf-3-production',
+          shelfLabel: 'Shelf 03 · Production',
+          company: '[Company 03 · Wedding Visual Production]',
+          subTag: 'Video Production',
+          isTop: false,
+          projectName: '[Prod 04 · Wedding Highlight Reels & Visual Cuts]',
+          sowLabel: 'Video Editing + Visual Storytelling',
+          goal: '[Placeholder: Dựng các thước phim recap lễ cưới giàu cảm xúc và chuẩn hóa kích thước bộ hình/video cho đa nền tảng truyền thông]',
+          result: '[Prod · metric: N+ Campaign Reels & Visual Decks]',
+          deliverables: ['[High-emotion Wedding Video Cut]', '[Color Consistency & Typography Overlay]', '[Multi-ratio Export (9:16 · 4:5 · 16:9)]'],
+          spineColor: '#4A1D34',
+          textColor: '#FCE7F3',
+          accent: '#F43F5E',
+        },
+
+        // SHELF 04: OTHER (PARTNERSHIP, ASSISTANT & ACCOUNT)
+        {
+          id: 'book-s4-01',
+          code: 'OTH·01',
+          shelfId: 'shelf-4-other',
+          shelfLabel: 'Shelf 04 · Other (Account & Partner)',
+          company: '[Org 05 · S Communications Partnership Ops]',
+          subTag: 'Account & Contracts',
+          isTop: true,
+          projectName: '[Partner/Account 01 · 11+ Corporate Sponsors (80M+ VND)]',
+          sowLabel: 'B2B Account Care + Contracts, Invoicing & Deliverables',
+          goal: '[Placeholder: Quản lý thủ tục hành chính, hợp đồng pháp lý, hóa đơn và theo dõi trả quyền lợi (deliverables) như một Account cho hơn 11+ đối tác doanh nghiệp (tổng ngân sách 80M+ VND)]',
+          result: '[Account/Partner · metric: 80M+ VND · 11+ Corporate Partners]',
+          deliverables: ['[Legal Contracts & Invoicing Governance]', '[Sponsor Account Care & Deliverable Tracking]', '[Final Partnership Acceptance Report]'],
+          spineColor: '#172554',
+          textColor: '#DBEAFE',
+          accent: '#2563EB',
+        },
+        {
+          id: 'book-s4-02',
+          code: 'OTH·02',
+          shelfId: 'shelf-4-other',
+          shelfLabel: 'Shelf 04 · Other (Account & Partner)',
+          company: '[Org 06 · AIESEC in Vietnam Partnership]',
+          subTag: 'Partnership & B2B',
+          isTop: false,
+          projectName: '[Partner/Account 02 · B2B Sponsorship (45M) & 20+ Media Partners]',
+          sowLabel: 'B2B Sponsorship Pitching + Media Partner Account',
+          goal: '[Placeholder: Đàm phán thành công các gói tài trợ B2B đa ngành (mang về 45M VND) và điều phối mạng lưới đối ngoại xuyên suốt 8 trường đại học cùng hơn 20+ Đối tác Truyền thông]',
+          result: '[Account/Partner · metric: 45M VND B2B · 20+ Media Partners]',
+          deliverables: ['[B2B Sponsorship Proposal & Pitching]', '[20+ Media Partner MOUs & Follow-up]', '[Cross-team Deliverable Alignment]'],
+          spineColor: '#064E3B',
+          textColor: '#D1FAE5',
+          accent: '#10B981',
+        },
+        {
+          id: 'book-s4-03',
+          code: 'OTH·03',
+          shelfId: 'shelf-4-other',
+          shelfLabel: 'Shelf 04 · Other (Account & Partner)',
+          company: '[Channel 04 · Will & Tina Media Assistant]',
+          subTag: 'Project Assistant',
+          isTop: true,
+          projectName: '[Assistant 03 · Operations & Project Assistant (200K+)]',
+          sowLabel: 'Project Assistant + Trend Research + Production Ops',
+          goal: '[Placeholder: Đảm nhiệm vai trò Trợ lý Vận hành & Dự án (Operations & Project Assistant): nghiên cứu xu hướng nền tảng, hành vi khán giả, điều phối lịch quay và hỗ trợ vận hành kênh 200K+ followers]',
+          result: '[Assistant · metric: 200K+ Channel Ops · Trend & Schedule Mgmt]',
+          deliverables: ['[Social Trend & Platform Update Briefings]', '[Shooting Schedule & Talent Coordination]', '[Cross-functional Project Tracking]'],
+          spineColor: '#27272A',
+          textColor: '#F4F4F5',
+          accent: '#F59E0B',
+        },
+        {
+          id: 'book-s4-04',
+          code: 'OTH·04',
+          shelfId: 'shelf-4-other',
+          shelfLabel: 'Shelf 04 · Other (Account & Partner)',
+          company: '[Events & Campaigns · Stakeholder Liaison]',
+          subTag: 'Account & Contracts',
+          isTop: false,
+          projectName: '[Account 04 · External Vendors, Speakers & Crew Alignment]',
+          sowLabel: 'Stakeholder Account Mgmt + Vendor/Speaker Liaison',
+          goal: '[Placeholder: Đầu mối làm việc trực tiếp (tương tự Account/Project Coordinator) giữa đội ngũ sản xuất nội bộ, nhà cung cấp bên ngoài (vendors), đội kỹ thuật và các diễn giả khách mời]',
+          result: '[Account · metric: Multi-Stakeholder & Vendor Alignment]',
+          deliverables: ['[External Vendor Briefing & Quotation Ops]', '[Keynote Speaker Care & Agenda Alignment]', '[Internal Production & Comms Sync]'],
+          spineColor: '#312E81',
+          textColor: '#E0E7FF',
+          accent: '#818CF8',
+        },
+      ];
+
+      let currentShelfId = 'top-selected';
+      let currentBookIndex = 4;
+      let expandedBookId = null;
+      let archiveViewMode = '3d-shelf';
+
+      function getBooksForShelf(shelfId) {
+        if (shelfId === 'top-selected') return ARCHIVE_BOOKS.filter((b) => b.isTop);
+        return ARCHIVE_BOOKS.filter((b) => b.shelfId === shelfId);
+      }
+
+      function activateShelf(shelfId, focusBookId) {
+        const items = getBooksForShelf(shelfId);
+        currentShelfId = shelfId;
+        if (focusBookId) {
+          const idx = items.findIndex((b) => b.id === focusBookId);
+          currentBookIndex = idx >= 0 ? idx : Math.floor(items.length / 2);
+        } else {
+          currentBookIndex = Math.floor(items.length / 2);
+        }
+        expandedBookId = null;
+        renderArchiveSection();
+      }
+
+      function setArchiveViewMode(mode) {
+        archiveViewMode = mode;
+        expandedBookId = null;
+        document.getElementById('btn-mode-3d').className =
+          mode === '3d-shelf'
+            ? 'inline-flex items-center gap-1.5 rounded-md px-3 py-1 text-xs font-semibold transition-colors bg-[#111111] text-[#F4F3EF] cursor-pointer'
+            : 'inline-flex items-center gap-1.5 rounded-md px-3 py-1 text-xs font-semibold transition-colors text-[#111111]/70 hover:text-[#111111] cursor-pointer';
+        document.getElementById('btn-mode-all').className =
+          mode === 'all-shelves'
+            ? 'inline-flex items-center gap-1.5 rounded-md px-3 py-1 text-xs font-semibold transition-colors bg-[#111111] text-[#F4F3EF] cursor-pointer'
+            : 'inline-flex items-center gap-1.5 rounded-md px-3 py-1 text-xs font-semibold transition-colors text-[#111111]/70 hover:text-[#111111] cursor-pointer';
+        renderArchiveSection();
+      }
+
+      function renderArchiveSection() {
+        // 1. Render 5 Shelf Selector Cards
+        const selectorEl = document.getElementById('shelf-selector-cards');
+        selectorEl.innerHTML = BRAND_SHELVES.map((s) => {
+          const active = currentShelfId === s.id && archiveViewMode === '3d-shelf';
+          const isTop = s.id === 'top-selected';
+          const count = getBooksForShelf(s.id).length;
+          return `
+            <button
+              type="button"
+              onmouseenter="if(archiveViewMode==='3d-shelf' && !expandedBookId) activateShelf('${s.id}')"
+              onclick="archiveViewMode='3d-shelf'; activateShelf('${s.id}')"
+              class="group flex flex-col justify-between rounded-2xl border p-3.5 text-left transition-all cursor-pointer ${
+                active
+                  ? isTop
+                    ? 'border-[#1D4ED8] bg-[#1D4ED8] text-white shadow-md'
+                    : 'border-[#111111] bg-[#111111] text-[#F4F3EF] shadow-md'
+                  : 'border-[#111111]/15 bg-white/90 text-[#111111] hover:border-[#1D4ED8]'
+              }"
+            >
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xs font-extrabold tracking-tight">${s.shortLabel}</span>
+                <span class="rounded-full px-2 py-0.5 font-mono-code text-[10px] font-bold whitespace-nowrap shrink-0 ${
+                  active ? 'bg-white/20 text-white' : 'bg-[#111111]/8 text-[#111111]/70'
+                }">${count} books</span>
+              </div>
+              <p class="mt-1.5 text-[11px] leading-snug ${active ? 'text-white/85' : 'text-[#111111]/60'}">
+                ${s.vietnameseHint}
+              </p>
+            </button>
+          `;
+        }).join('');
+
+        const stageEl = document.getElementById('archive-stage-container');
+
+        if (archiveViewMode === 'all-shelves') {
+          stageEl.innerHTML = `<div class="space-y-5">
+            ${BRAND_SHELVES.map((shelf) => {
+              const books = getBooksForShelf(shelf.id);
+              return `
+                <div class="rounded-2xl border border-[#111111]/12 bg-[#EFEDE7] p-6">
+                  <div class="flex flex-wrap items-center justify-between gap-3 border-b border-[#111111]/10 pb-3.5">
+                    <div>
+                      <div class="flex flex-wrap items-center gap-2.5">
+                        <h3 class="text-base font-extrabold text-[#111111]">${shelf.fullTitle}</h3>
+                        <span class="text-xs font-mono-code font-bold text-[#2563EB]">${shelf.sowFocus}</span>
+                      </div>
+                      <p class="mt-0.5 text-xs text-[#111111]/65">${shelf.desc}</p>
+                    </div>
+                    <button
+                      type="button"
+                      onclick="setArchiveViewMode('3d-shelf'); activateShelf('${shelf.id}')"
+                      class="rounded-full bg-[#111111] px-4 py-1.5 text-xs font-bold text-white hover:bg-[#1D4ED8] whitespace-nowrap shrink-0 cursor-pointer"
+                    >Open 3D Shelf (${books.length} Books) →</button>
+                  </div>
+                  <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    ${books
+                      .map(
+                        (b) => `
+                      <button
+                        type="button"
+                        onclick="setArchiveViewMode('3d-shelf'); activateShelf('${shelf.id}', '${b.id}'); expandedBookId='${b.id}'; renderArchiveSection()"
+                        class="group flex items-stretch overflow-hidden rounded-xl border border-[#111111]/12 bg-white text-left transition-all hover:border-[#1D4ED8] cursor-pointer"
+                      >
+                        <div style="background-color:${b.spineColor}; color:${b.textColor}" class="flex w-12 shrink-0 flex-col items-center justify-between py-3 text-[9px] font-mono-code font-bold">
+                          <span>${b.code}</span>
+                          <span>${b.isTop ? '★' : '·'}</span>
+                        </div>
+                        <div class="flex flex-1 flex-col justify-between p-4">
+                          <div>
+                            <div class="text-[11px] font-mono-code text-[#2563EB]">${b.company} · ${b.subTag}</div>
+                            <div class="mt-1 text-sm font-extrabold text-[#111111] group-hover:text-[#1D4ED8]">${b.projectName}</div>
+                          </div>
+                          <div class="mt-3 text-xs font-extrabold font-mono-code text-[#111111]/80">${b.result}</div>
+                        </div>
+                      </button>
+                    `
+                      )
+                      .join('')}
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>`;
+          return;
+        }
+
+        // Interactive 3D Shelf Mode
+        const shelfDef = BRAND_SHELVES.find((s) => s.id === currentShelfId) || BRAND_SHELVES[0];
+        const visibleBooks = getBooksForShelf(currentShelfId);
+        const safeIdx = Math.min(Math.max(0, currentBookIndex), visibleBooks.length - 1);
+        const currentBook = visibleBooks[safeIdx] || ARCHIVE_BOOKS[0];
+
+        if (expandedBookId) {
+          const exp = ARCHIVE_BOOKS.find((b) => b.id === expandedBookId) || currentBook;
+          stageEl.innerHTML = `
+            <div class="overflow-hidden rounded-3xl border border-[#111111]/12 bg-[#EFEDE7] p-6 sm:p-10">
+              <div class="border-b border-[#111111]/10 pb-4">
+                <button
+                  type="button"
+                  onclick="expandedBookId=null; renderArchiveSection()"
+                  class="inline-flex items-center gap-2 rounded-full bg-[#111111] px-3.5 py-1.5 text-xs font-bold text-[#F4F3EF] cursor-pointer"
+                >← Back to ${shelfDef.shortLabel}</button>
+              </div>
+              <div class="grid grid-cols-1 gap-8 py-8 lg:grid-cols-12 lg:items-center">
+                <div class="lg:col-span-7">
+                  <div class="text-xs font-mono-code font-bold uppercase tracking-wider text-[#111111]/60">
+                    ${exp.shelfLabel} · ${exp.code} · <span class="text-[#2563EB]">${exp.sowLabel}</span>
+                  </div>
+                  <h3 class="mt-2 text-3xl font-extrabold tracking-tight text-[#1D4ED8] sm:text-4xl">${exp.projectName}</h3>
+                  <div class="mt-2 text-xs font-bold uppercase tracking-wider text-[#111111]/70 font-mono-code">${exp.company}</div>
+                  <p class="mt-4 max-w-xl text-sm font-medium leading-relaxed text-[#111111]/80">${exp.goal}</p>
+                  <div class="mt-5 max-w-lg space-y-2">
+                    ${exp.deliverables
+                      .map(
+                        (d, i) => `
+                      <div class="flex items-center gap-2.5 text-xs font-medium text-[#111111]/75">
+                        <span class="font-mono-code font-bold text-[#1D4ED8]">0${i + 1}.</span>
+                        <span>${d}</span>
+                      </div>
+                    `
+                      )
+                      .join('')}
+                  </div>
+                  <div class="mt-7 flex flex-wrap items-center gap-3">
+                    <button
+                      type="button"
+                      onclick="expandedBookId=null; renderArchiveSection()"
+                      class="rounded-full bg-[#111111] px-5 py-2.5 text-xs font-bold text-white cursor-pointer"
+                    >← Return to 3D Shelf</button>
+                  </div>
+                </div>
+                <div class="flex justify-center lg:col-span-5">
+                  <div style="background-color:${exp.spineColor}" class="relative flex h-[400px] w-[290px] flex-col justify-between rounded-lg border border-black/30 p-6 text-white shadow-2xl">
+                    <div class="border-b border-white/15 pb-3 text-center">
+                      <div class="text-[10px] font-mono-code uppercase text-white/70">${exp.shelfLabel} · ${exp.subTag}</div>
+                      <div class="mt-1.5 text-lg font-extrabold uppercase">${exp.projectName}</div>
+                    </div>
+                    <div class="my-auto flex h-52 flex-col items-center justify-center rounded border border-white/20 bg-black/25 p-4 text-center">
+                      <span class="text-sm font-semibold text-white/90">[${exp.subTag} Visual / Link Slot]</span>
+                      <span class="mt-1.5 text-xs font-mono-code text-white/75">${exp.result}</span>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-white/15 pt-3 text-[11px] font-mono-code text-white/75">
+                      <span>${exp.company}</span>
+                      <span class="rounded border border-white/30 px-1.5 py-0.5">${exp.isTop ? '★ TOP' : exp.code}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          return;
+        }
+
+        stageEl.innerHTML = `
+          <div class="overflow-hidden rounded-3xl border border-[#111111]/12 bg-[#EFEDE7] p-6 sm:p-10">
+            <div class="border-b border-[#111111]/10 pb-4">
+              <div class="flex flex-wrap items-center gap-2 text-xs font-extrabold text-[#111111]">
+                <span>${shelfDef.fullTitle}</span>
+                <span class="text-[#111111]/35">·</span>
+                <span class="font-mono-code text-[11px] font-semibold text-[#2563EB]">${shelfDef.sowFocus}</span>
+              </div>
+              <p class="mt-0.5 text-xs text-[#111111]/65">${shelfDef.desc}</p>
+            </div>
+
+            <!-- 3D Spines Row -->
+            <div class="relative flex min-h-[395px] items-center justify-center gap-2.5 sm:gap-4 py-6 overflow-x-auto" style="perspective: 1200px">
+              ${visibleBooks
+                .map((item, idx) => {
+                  const offset = idx - safeIdx;
+                  const isCenter = offset === 0;
+                  const absOffset = Math.abs(offset);
+                  const rotateY = isCenter ? 0 : offset < 0 ? 28 : -28;
+                  const scale = isCenter ? 1 : Math.max(0.76, 0.94 - absOffset * 0.06);
+
+                  if (isCenter) {
+                    return `
+                      <div
+                        style="transform: rotateY(0deg) scale(1); transition: transform 300ms ease"
+                        class="relative z-20 mx-2 flex h-[395px] w-[275px] sm:w-[300px] shrink-0 flex-col justify-between overflow-hidden rounded-lg border border-black/25 shadow-2xl"
+                      >
+                        <div class="absolute inset-0" style="background-color:${item.spineColor}"></div>
+                        <div class="absolute inset-y-0 left-3 w-[2px] bg-white/15"></div>
+                        <div class="relative z-10 border-b border-white/15 px-5 pt-4 pb-3 text-center">
+                          <div class="text-[10px] font-mono-code tracking-widest uppercase text-white/80">
+                            ${item.isTop ? '★ ' : ''}${item.code} · ${item.subTag}
+                          </div>
+                          <h3 class="mt-1.5 text-base font-extrabold leading-snug tracking-tight uppercase sm:text-lg" style="color:${item.textColor}">
+                            ${item.projectName}
+                          </h3>
+                          <div class="mt-1 text-[11px] font-medium text-white/75">${item.company}</div>
+                        </div>
+                        <div class="relative z-10 mx-4 my-2 flex flex-1 flex-col items-center justify-center rounded border border-white/20 bg-black/25 p-4 text-center">
+                          <span class="text-xs font-semibold text-white/95">[${item.sowLabel}]</span>
+                          <span class="mt-1.5 text-[11px] font-mono-code text-white/75">${item.result}</span>
+                          <button
+                            type="button"
+                            onclick="expandedBookId='${item.id}'; renderArchiveSection()"
+                            class="mt-3.5 flex h-15 w-15 flex-col items-center justify-center rounded-full bg-[#1D4ED8] text-[10px] font-bold tracking-wider text-white shadow-lg transition-transform hover:scale-105 cursor-pointer"
+                          >
+                            <span>OPEN</span>
+                            <span class="text-[9px] font-normal opacity-85">WORK</span>
+                          </button>
+                        </div>
+                        <div class="relative z-10 flex items-center justify-between border-t border-white/15 px-5 py-3 text-[10px] font-mono-code text-white/80">
+                          <span>${item.shelfLabel.toUpperCase()}</span>
+                          <span class="rounded border border-white/30 px-1.5 py-0.5 font-bold">${item.isTop ? '★ TOP SELECTED' : item.code}</span>
+                        </div>
+                      </div>
+                    `;
+                  }
+
+                  return `
+                    <button
+                      type="button"
+                      onmouseenter="currentBookIndex=${idx}; renderArchiveSection()"
+                      onclick="currentBookIndex=${idx}; renderArchiveSection()"
+                      style="background-color:${item.spineColor}; color:${item.textColor}; transform: rotateY(${rotateY}deg) scale(${scale}); transition: transform 260ms ease"
+                      class="relative flex h-[345px] w-[54px] sm:w-[66px] shrink-0 flex-col items-center justify-between overflow-hidden rounded-sm border border-black/30 py-3.5 shadow-md hover:brightness-110 cursor-pointer"
+                    >
+                      <div class="flex flex-col items-center gap-1 shrink-0">
+                        <span class="text-[9px] font-mono-code opacity-85">${item.code}</span>
+                        ${item.isTop ? '<span class="text-[9px] text-[#FACC15]">★</span>' : ''}
+                      </div>
+                      <div class="my-2 flex max-h-[220px] items-start justify-center overflow-hidden">
+                        <span class="max-h-[220px] truncate text-[10px] font-extrabold tracking-wider uppercase" style="writing-mode: vertical-rl; text-orientation: mixed">
+                          ${item.projectName.replace(/^\[|\]$/g, '')}
+                        </span>
+                      </div>
+                      <span class="h-2 w-2 shrink-0 rounded-full" style="background-color:${item.accent}"></span>
+                    </button>
+                  `;
+                })
+                .join('')}
+            </div>
+
+            <!-- Active Book Readout -->
+            <div class="mt-2 flex flex-col items-center text-center">
+              <div class="text-[11px] font-mono-code font-bold uppercase tracking-wider text-[#2563EB]">
+                ${currentBook.shelfLabel} · ${currentBook.subTag}
+              </div>
+              <h3 class="mt-0.5 text-xl font-extrabold tracking-tight text-[#1D4ED8] sm:text-2xl">
+                ${currentBook.projectName}
+              </h3>
+              <p class="mt-1 text-xs font-medium text-[#111111]/70">
+                ${currentBook.company} · <span class="font-bold text-[#111111]">${currentBook.sowLabel}</span>
+              </p>
+              <div class="mt-3 flex flex-wrap items-center justify-center gap-2.5">
+                <span class="rounded-lg bg-white px-3 py-1 text-xs font-extrabold font-mono-code text-[#111111]">${currentBook.result}</span>
+                ${currentBook.deliverables
+                  .map(
+                    (d) => `<span class="rounded-lg border border-[#111111]/12 bg-white/60 px-2.5 py-1 text-[11px] font-medium text-[#111111]/75">${d}</span>`
+                  )
+                  .join('')}
+                <button
+                  type="button"
+                  onclick="expandedBookId='${currentBook.id}'; renderArchiveSection()"
+                  class="rounded-full bg-[#111111] px-4 py-1 text-xs font-bold text-white hover:bg-[#1D4ED8] cursor-pointer"
+                >Inspect Full Details →</button>
+              </div>
+            </div>
+
+            <!-- Quick-Hover Index Across All 4 Shelves -->
+            <div class="mt-7 border-t border-[#111111]/12 pt-5">
+              <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
+                <span class="text-xs font-extrabold uppercase tracking-wider text-[#111111]/75 font-mono-code">
+                  Quick-Hover Index · All Work Achievements by Shelf (Lia chuột vào bất kỳ cuốn nào để xem trên kệ 3D):
+                </span>
+                <span class="text-[11px] font-mono-code text-[#2563EB]">
+                  ★ = Top Selected (9 books) · Total 16 books across 4 shelves
+                </span>
+              </div>
+              <div class="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
+                ${BRAND_SHELVES.filter((s) => s.id !== 'top-selected')
+                  .map((shelf) => {
+                    const sBooks = getBooksForShelf(shelf.id);
+                    return `
+                      <div class="rounded-2xl border border-[#111111]/12 bg-white/80 p-3.5">
+                        <div class="mb-2 flex items-center justify-between gap-2 border-b border-[#111111]/10 pb-2">
+                          <span class="text-xs font-extrabold text-[#111111]">${shelf.shortLabel}</span>
+                          <span class="font-mono-code text-[10px] font-semibold text-[#2563EB] whitespace-nowrap shrink-0">${sBooks.length} cuốn</span>
+                        </div>
+                        <div class="space-y-1.5">
+                          ${sBooks
+                            .map((book) => {
+                              const isCurrent = currentBook.id === book.id;
+                              return `
+                                <button
+                                  type="button"
+                                  onmouseenter="activateShelf('${shelf.id}', '${book.id}')"
+                                  onclick="activateShelf('${shelf.id}', '${book.id}'); expandedBookId='${book.id}'; renderArchiveSection()"
+                                  class="flex w-full items-center justify-between gap-2 rounded-lg px-2.5 py-1.5 text-left text-[11px] transition-colors cursor-pointer ${
+                                    isCurrent
+                                      ? 'bg-[#1D4ED8] font-bold text-white'
+                                      : 'bg-[#F4F3EF]/80 font-medium text-[#111111]/80 hover:bg-[#1D4ED8]/10 hover:text-[#1D4ED8]'
+                                  }"
+                                >
+                                  <span class="truncate">${book.isTop ? '★ ' : ''}${book.projectName.replace(/^\[|\]$/g, '')}</span>
+                                  <span class="shrink-0 font-mono-code text-[10px] opacity-75">${book.code}</span>
+                                </button>
+                              `;
+                            })
+                            .join('')}
+                        </div>
+                      </div>
+                    `;
+                  })
+                  .join('')}
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      // 4. MODALS
+      function openModal(type) {
+        const backdrop = document.getElementById('modal-backdrop');
+        const card = document.getElementById('modal-card');
+        backdrop.classList.remove('hidden');
+        backdrop.classList.add('flex');
+
+        if (type === 'contact') {
+          card.innerHTML = `
+            <div class="text-xs font-mono-code text-[#2563EB]">DIRECT CONTACT PLACEHOLDER</div>
+            <h3 class="mt-1.5 text-xl font-extrabold text-[#111111]">Say hello · [Your name]</h3>
+            <p class="mt-1 text-xs text-[#111111]/65">[Email · phone · social links]</p>
+            <div class="my-5 space-y-2.5">
+              <div class="rounded-xl border border-[#111111]/12 bg-white px-4 py-3 text-xs font-medium text-[#111111]/75">Email: <span class="font-mono-code">[your.email@domain.com]</span></div>
+              <div class="rounded-xl border border-[#111111]/12 bg-white px-4 py-3 text-xs font-medium text-[#111111]/75">Phone / Zalo: <span class="font-mono-code">[+84 / phone number]</span></div>
+              <div class="rounded-xl border border-[#111111]/12 bg-white px-4 py-3 text-xs font-medium text-[#111111]/75">Socials: <span class="font-mono-code">[LinkedIn · Behance · Instagram]</span></div>
+            </div>
+            <div class="flex justify-end">
+              <button type="button" onclick="closeModal()" class="rounded-full bg-[#111111] px-5 py-2 text-xs font-bold text-white cursor-pointer">Close</button>
+            </div>
+          `;
+        } else if (type === 'cv') {
+          card.innerHTML = `
+            <div class="text-xs font-mono-code text-[#2563EB]">CV / RESUME SLOT</div>
+            <h3 class="mt-1.5 text-xl font-extrabold text-[#111111]">[Your name] — Curriculum Vitae</h3>
+            <div class="placeholder-surface my-5 flex h-36 flex-col items-center justify-center rounded-xl border border-[#111111]/12 p-4 text-center">
+              <span class="text-sm font-semibold text-[#111111]/75">[Your_Name_CV.pdf]</span>
+              <span class="mt-1 text-xs font-mono-code text-[#111111]/50">Ready to link to your actual PDF document</span>
+            </div>
+            <div class="flex justify-end">
+              <button type="button" onclick="closeModal()" class="rounded-full bg-[#111111] px-5 py-2 text-xs font-bold text-white cursor-pointer">Close</button>
+            </div>
+          `;
+        } else {
+          card.innerHTML = `
+            <div class="text-xs font-mono-code text-[#2563EB]">MEDIA PLACEHOLDER SPEC</div>
+            <h3 class="mt-1.5 text-xl font-extrabold text-[#111111]">[Portrait or 15-second intro video]</h3>
+            <div class="placeholder-surface my-5 flex h-44 flex-col items-center justify-center rounded-xl border border-[#111111]/12 p-4 text-center">
+              <span class="text-sm font-semibold text-[#111111]/75">Hero Media Slot (16:10 / 4:3)</span>
+            </div>
+            <div class="flex justify-end">
+              <button type="button" onclick="closeModal()" class="rounded-full bg-[#111111] px-5 py-2 text-xs font-bold text-white cursor-pointer">Close</button>
+            </div>
+          `;
+        }
+      }
+
+      function openSampleModal(stepTitle, sampleName) {
+        const backdrop = document.getElementById('modal-backdrop');
+        const card = document.getElementById('modal-card');
+        backdrop.classList.remove('hidden');
+        backdrop.classList.add('flex');
+        card.innerHTML = `
+          <div class="text-xs font-mono-code text-[#2563EB]">PROCESS DELIVERABLE SAMPLE</div>
+          <h3 class="mt-1.5 text-xl font-extrabold text-[#111111]">${stepTitle} — ${sampleName}</h3>
+          <div class="placeholder-surface my-5 flex h-40 flex-col items-center justify-center rounded-xl border border-[#111111]/12 p-4 text-center">
+            <span class="text-sm font-semibold text-[#111111]/75">${sampleName}</span>
+            <span class="mt-1 text-xs text-[#111111]/50">Attach PDF / Notion / Google Sheet link here</span>
+          </div>
+          <div class="flex justify-end">
+            <button type="button" onclick="closeModal()" class="rounded-full bg-[#111111] px-5 py-2 text-xs font-bold text-white cursor-pointer">Close</button>
+          </div>
+        `;
+      }
+
+      function closeModal() {
+        const backdrop = document.getElementById('modal-backdrop');
+        backdrop.classList.add('hidden');
+        backdrop.classList.remove('flex');
+      }
+
+      // Initialize Sections 4 & 5 on load
+      renderSowSection();
+      renderArchiveSection();
+    </script>
+  </body>
+</html>
